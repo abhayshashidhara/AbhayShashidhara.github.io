@@ -1,0 +1,10 @@
+/* Force sidebar avatar to be a square */
+.author__avatar img,
+.sidebar .author__avatar img,
+.author__avatar img.u-photo {
+  border-radius: 0 !important;     /* removes circle */
+  aspect-ratio: 1 / 1;
+  object-fit: cover;              /* crops nicely */
+  width: 220px;                   /* adjust if needed */
+  height: 220px;                  /* keep same as width */
+}
