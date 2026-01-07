@@ -9,8 +9,11 @@ classes: projects-page
 <div class="projects-grid">
   {% for p in site.data.projects %}
   <div class="project-card">
+
     <div class="project-image-wrap">
-      <img class="project-image" src="{{ p.image | relative_url }}" alt="{{ p.title }}">
+      <img class="project-image"
+           src="{{ p.image | relative_url }}"
+           alt="{{ p.title }}">
     </div>
 
     <div class="project-body">
@@ -24,6 +27,28 @@ classes: projects-page
         {% endfor %}
       </div>
       {% endif %}
+
+      <!-- 👇 THIS IS THE PART YOU WERE CONFUSED ABOUT -->
+      <div class="project-actions">
+        {% if p.github_url %}
+          <a class="project-btn project-btn-ghost"
+             href="{{ p.github_url }}"
+             target="_blank"
+             rel="noopener">GitHub</a>
+        {% endif %}
+
+        {% if p.report_url %}
+          <a class="project-btn"
+             href="{{ p.report_url | relative_url }}"
+             target="_blank"
+             rel="noopener">Read more</a>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+  {% endfor %}
+</div>
 
       <div class="project-actions">
         <a class="project-btn project-btn-ghost"
