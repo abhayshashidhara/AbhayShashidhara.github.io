@@ -1,9 +1,6 @@
 /* Only affects pages that include: classes: projects-page */
 .projects-page {
-
-  .page__content {
-    max-width: 1100px;
-  }
+  .page__content { max-width: 1100px; }
 
   .projects-grid{
     display: grid;
@@ -33,9 +30,7 @@
     display: block;
   }
 
-  .project-body{
-    padding: 18px 18px 20px 18px;
-  }
+  .project-body{ padding: 18px 18px 20px 18px; }
 
   .project-title{
     margin: 0 0 10px 0;
@@ -48,6 +43,25 @@
     margin: 0 0 14px 0;
     color: rgba(255,255,255,0.86);
     line-height: 1.55;
+  }
+
+  /* purple “tool boxes” (chips) */
+  .project-stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 6px 0 14px 0;
+  }
+
+  .stack-pill{
+    background: rgba(138, 92, 255, 1);
+    color: #0b0b23;
+    font-weight: 800;
+    border-radius: 10px;
+    padding: 8px 12px;
+    line-height: 1;
+    font-size: 14px;
+    border: 1px solid rgba(255,255,255,0.12);
   }
 
   .project-actions{
@@ -84,11 +98,7 @@
   }
 
   @media (max-width: 900px){
-    .projects-grid{
-      grid-template-columns: 1fr;
-    }
-    .project-image{
-      height: 240px;
-    }
+    .projects-grid{ grid-template-columns: 1fr; }
+    .project-image{ height: 240px; }
   }
 }
