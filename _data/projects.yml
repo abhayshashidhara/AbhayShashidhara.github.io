@@ -1,6 +1,6 @@
 - title: "GoEmotions (CSCI 5523): Classical ML vs Transformer Models"
   description: "Course project for CSCI 5523 (Introduction to Data Mining). Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
-  image: /images/projects/goemotions-csci5523.jpg
+  image: "/images/projects/goemotions-csci5523.jpg"
   stack:
     - Python
     - TF-IDF
@@ -8,59 +8,59 @@
     - MobileBERT
     - Evaluation
   github_url: "https://github.com/abhayshashidhara/Comparative_emotion_classification_using_ml_models"
-  report_url: /files/CSCI5523-GoEmotions-Final-Report.pdf
+  report_url: "/files/CSCI5523-GoEmotions-Final-Report.pdf"
 
 - title: "Project 2 Placeholder"
   description: "Short placeholder description. Replace this later."
-  image: /images/projects/project-2.jpg
+  image: "/images/projects/project-2.jpg"
   stack:
     - Python
     - Data
     - Modeling
     - Evaluation
   github_url: "https://github.com/abhayshashidhara"
-  report_url: /files/project-2-report.pdf
+  report_url: "/files/project-2-report.pdf"
 
 - title: "Project 3 Placeholder"
   description: "Short placeholder description. Replace this later."
-  image: /images/projects/project-3.jpg
+  image: "/images/projects/project-3.jpg"
   stack:
     - Python
     - NLP
     - ML
     - Deployment
   github_url: "https://github.com/abhayshashidhara"
-  report_url: /files/project-3-report.pdf
+  report_url: "/files/project-3-report.pdf"
 
 - title: "Project 4 Placeholder"
   description: "Short placeholder description. Replace this later."
-  image: /images/projects/project-4.jpg
+  image: "/images/projects/project-4.jpg"
   stack:
     - Python
     - CV
     - ML
     - Research
   github_url: "https://github.com/abhayshashidhara"
-  report_url: /files/project-4-report.pdf
+  report_url: "/files/project-4-report.pdf"
 
 - title: "Project 5 Placeholder"
   description: "Short placeholder description. Replace this later."
-  image: /images/projects/project-5.jpg
+  image: "/images/projects/project-5.jpg"
   stack:
     - Python
     - Data
     - SQL
     - Analytics
   github_url: "https://github.com/abhayshashidhara"
-  report_url: /files/project-5-report.pdf
+  report_url: "/files/project-5-report.pdf"
 
 - title: "Project 6 Placeholder"
   description: "Short placeholder description. Replace this later."
-  image: /images/projects/project-6.jpg
+  image: "/images/projects/project-6.jpg"
   stack:
     - Python
     - ML
     - Experiments
     - Report
   github_url: "https://github.com/abhayshashidhara"
-  report_url: /files/project-6-report.pdf
+  report_url: "/files/project-6-report.pdf"
