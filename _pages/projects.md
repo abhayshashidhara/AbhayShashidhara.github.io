@@ -28,7 +28,6 @@ classes: projects-page
       </div>
       {% endif %}
 
-      <!-- 👇 THIS IS THE PART YOU WERE CONFUSED ABOUT -->
       <div class="project-actions">
         {% if p.github_url %}
           <a class="project-btn project-btn-ghost"
@@ -49,20 +48,3 @@ classes: projects-page
   </div>
   {% endfor %}
 </div>
-
-      <div class="project-actions">
-        <a class="project-btn project-btn-ghost"
-           href="{{ p.github_url }}"
-           target="_blank"
-           rel="noopener">GitHub</a>
-
-        <a class="project-btn"
-           href="{{ p.report_url | relative_url }}"
-           target="_blank"
-           rel="noopener">Read more</a>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
-
