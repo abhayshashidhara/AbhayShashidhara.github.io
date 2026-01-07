@@ -8,3 +8,7 @@
   width: 220px;                   /* adjust if needed */
   height: 220px;                  /* keep same as width */
 }
+.page__content p {
+  text-align: justify;
+  text-justify: inter-word;
+}
