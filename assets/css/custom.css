@@ -69,11 +69,12 @@
 /* Project image */
 .projects-page .project-image {
   width: 100%;
-  height: 360px;               /* bigger hero image */
-  object-fit: cover;
+  max-height: 200px;      /* controls vertical size */
+  object-fit: cover;      /* crops instead of stretching */
   border-radius: 12px;
   display: block;
 }
+
 
 /* Description */
 .projects-page .project-desc {
