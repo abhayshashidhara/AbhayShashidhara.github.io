@@ -28,20 +28,25 @@ classes: projects-page
       {% endif %}
 
       <div class="project-actions">
-        {% if p.github_url %}
-          <a class="project-btn project-btn-ghost"
-             href="{{ p.github_url }}"
-             target="_blank"
-             rel="noopener">GitHub</a>
-        {% endif %}
+  {% if p.github_url %}
+    <a class="project-btn project-btn-ghost"
+       href="{{ p.github_url }}"
+       target="_blank"
+       rel="noopener">GitHub</a>
+  {% endif %}
 
-        {% if p.report_url %}
-          <a class="project-btn"
-             href="{{ p.report_url | relative_url }}"
-             target="_blank"
-             rel="noopener">Read more</a>
-        {% endif %}
-      </div>
+  {% if p.github_url and p.report_url %}
+    <span class="project-separator">|</span>
+  {% endif %}
+
+  {% if p.report_url %}
+    <a class="project-btn project-btn-ghost"
+       href="{{ p.report_url | relative_url }}"
+       target="_blank"
+       rel="noopener">Read more</a>
+  {% endif %}
+</div>
+
 
     </div>
   </div> 
