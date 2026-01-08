@@ -96,14 +96,15 @@ body.about-page .page__content p {
 }
 
 /* ✅ FIRST PROJECT IMAGE ONLY (GoEmotions) — make it SMALLER */
-.projects-page img[src*="goemotions-csci5523.jpg"] {
-  display: block !important;
+/* GoEmotions image ONLY (Project 1) */
+.projects-page img[src*="goemotions-csci5523.jpg"]{
+  max-width: 320px !important;   /* <- make smaller: 280px / 300px / 350px */
   width: 100% !important;
-  max-width: 360px !important;   /* <<< SMALL size (change to 300px if you want tinier) */
   height: auto !important;
-  margin: 18px auto 24px !important;
-  border-radius: 12px !important;
+  display: block !important;
+  margin: 16px auto 22px !important;
 }
+
 
 /* Description */
 .projects-page .projects-grid .project-desc {
