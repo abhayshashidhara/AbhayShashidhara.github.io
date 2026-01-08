@@ -37,7 +37,8 @@
 
 
 - title: "Alzheimer’s Disease Database: Integrated Multi Modal Research Platform"
-  description: "Developed a centralized Alzheimer’s disease database integrating genomic, proteomic, imaging, and clinical datasets to support cross modality analysis for diagnosis and research. "
+  description: "Developed a centralized Alzheimer’s disease database integrating genomic, proteomic, imaging, and clinical datasets to support cross modality analysis for diagnosis and research."
+  image: "/images/projects/alz.jpg"
   stack:
     - SQLAlchemy
     - Flask
@@ -48,13 +49,14 @@
   report_url: "/files/Phase 2 Report(minor).pdf"
 
 - title: "CA-Bot: A PDF Grounded Chatbot for CA Study"
-  description: "Built a RAG based chatbot that answers Chartered Accountancy questions strictly from prescribed textbooks stored as PDFs.Used dense embeddings with FAISS based retrieval to ground outputs in the source PDFs, return citation links, and minimize unsupported content.  image: "/images/projects/cabot.jpeg"
+  description: "Built a RAG based chatbot that answers Chartered Accountancy questions strictly from prescribed textbooks stored as PDFs. Generated answers grounded in retrieved textbook passages and included citations to improve traceability and reduce unsupported statements."
+  image: "/images/projects/chatbot.jpeg"
   stack:
     - RAG
-    - FAISS
-    - PyMuPDF 
+    - PyMuPDF
     - Hugging Face Transformers
     - PDF Parsing
+    - Embeddings
   github_url: "https://github.com/abhayshashidhara/ca_bot_project_rag"
   report_url: "/files/cabot.pdf"
 
