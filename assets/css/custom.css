@@ -173,7 +173,7 @@ body.about-page .page__content p {
   }
 }
 /* =========================================================
-   EXPERIENCE PAGE ONLY — cards + right-side logo
+   EXPERIENCE PAGE ONLY — short paragraphs + right logo
    Requires front-matter: classes: experience-page
    ========================================================= */
 
@@ -187,7 +187,7 @@ body.experience-page .xp-card{
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  gap: 22px;
+  gap: 18px;
   padding: 26px 0;
   border-top: 1px solid rgba(0,0,0,0.12);
 }
@@ -202,16 +202,28 @@ body.experience-page .xp-body{
 }
 
 body.experience-page .xp-role{
-  margin: 0;
-  font-size: 22px;
-  font-weight: 800;
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 850;
 }
 
 body.experience-page .xp-org{
-  margin-top: 6px;
-  font-size: 15px;
-  font-weight: 600;
+  font-size: 15.5px;
+  font-weight: 650;
   opacity: 0.9;
+}
+
+body.experience-page .xp-org a{
+  text-decoration: none;
+}
+
+body.experience-page .xp-org a:hover{
+  text-decoration: underline;
+}
+
+body.experience-page .xp-dot{
+  margin: 0 6px;
+  opacity: 0.7;
 }
 
 body.experience-page .xp-meta{
@@ -220,42 +232,41 @@ body.experience-page .xp-meta{
   opacity: 0.75;
 }
 
-body.experience-page .xp-summary{
-  margin-top: 12px;
-  margin-bottom: 12px;
+body.experience-page .xp-desc{
+  margin: 14px 0 0 0;
+  line-height: 1.7;
+  max-width: 760px;
 }
 
-body.experience-page .xp-bullets{
-  margin: 0;
-  padding-left: 18px;
-}
-
-body.experience-page .xp-bullets li{
-  margin: 8px 0;
-}
-
+/* Right-side logo */
 body.experience-page .xp-logo{
   flex: 0 0 auto;
-  display: flex;
-  justify-content: flex-end;
-}
-
-body.experience-page .xp-logo img{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 56px;
   height: 56px;
-  object-fit: contain;
-  border-radius: 10px;
+  border-radius: 12px;
   background: #ffffff;
   border: 1px solid rgba(0,0,0,0.10);
   padding: 6px;
+  text-decoration: none;
 }
 
-/* Mobile: logo drops below nicely */
+body.experience-page .xp-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+/* Mobile: logo goes below */
 @media (max-width: 860px){
   body.experience-page .xp-card{
     flex-direction: column;
   }
   body.experience-page .xp-logo{
-    justify-content: flex-start;
+    width: 52px;
+    height: 52px;
   }
 }
