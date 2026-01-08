@@ -36,35 +36,27 @@
   report_url: "/files/THEFinallllthesis[1].pdf"
 
 
-- title: "Project 4 Placeholder"
-  description: "Short placeholder description. Replace this later."
-  image: "/images/projects/project-4.jpg"
+- title: "Alzheimer’s Disease Database: Integrated Multi Modal Research Platform"
+  description: "Developed a centralized Alzheimer’s disease database integrating genomic, proteomic, imaging, and clinical datasets to support cross modality analysis for diagnosis and research. "
   stack:
-    - Python
-    - CV
-    - ML
-    - Research
-  github_url: "https://github.com/abhayshashidhara"
-  report_url: "/files/project-4-report.pdf"
+    - SQLAlchemy
+    - Flask
+    - REST API
+    - Java Script
+    - CSS
+  github_url: "https://github.com/abhayshashidhara/Database_for_Alzheimer-s"
+  report_url: "/files/Phase 2 Report(minor).pdf"
 
-- title: "Project 5 Placeholder"
-  description: "Short placeholder description. Replace this later."
-  image: "/images/projects/project-5.jpg"
+- title: "CA-Bot: A PDF Grounded Chatbot for CA Study"
+  description: "Built a RAG based chatbot that answers Chartered Accountancy questions strictly from prescribed textbooks stored as PDFs.Used dense embeddings with FAISS based retrieval to ground outputs in the source PDFs, return citation links, and minimize unsupported content.  image: "/images/projects/cabot.jpeg"
   stack:
-    - Python
-    - Data
-    - SQL
-    - Analytics
-  github_url: "https://github.com/abhayshashidhara"
-  report_url: "/files/project-5-report.pdf"
+    - RAG
+    - FAISS
+    - PyMuPDF 
+    - Hugging Face Transformers
+    - PDF Parsing
+  github_url: "https://github.com/abhayshashidhara/ca_bot_project_rag"
+  report_url: "/files/cabot.pdf"
 
-- title: "Project 6 Placeholder"
-  description: "Short placeholder description. Replace this later."
-  image: "/images/projects/project-6.jpg"
-  stack:
-    - Python
-    - ML
-    - Experiments
-    - Report
-  github_url: "https://github.com/abhayshashidhara"
-  report_url: "/files/project-6-report.pdf" 
+
+
