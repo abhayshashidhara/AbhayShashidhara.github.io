@@ -168,15 +168,6 @@ body.about-page .page__content p {
     max-width: 100% !important;
   }
 }
-
-
-
-
-
-/* =========================
-   EXPERIENCE PAGE
-   ========================= */
-
 /* =========================
    EXPERIENCE PAGE
    ========================= */
@@ -220,10 +211,8 @@ body.about-page .page__content p {
 }
 
 /* =========================
-   EXPERIENCE PAGE (FORCE)
+   FORCE TIMELINE ITALIC
    ========================= */
-
-/* Timeline MUST be italic */
 .experience-page .xp-meta,
 .experience-page .xp-meta em{
   font-style: italic !important;
@@ -232,7 +221,9 @@ body.about-page .page__content p {
   margin-top: 6px !important;
 }
 
-/* Description MUST be justified */
+/* =========================
+   FORCE CONTENT JUSTIFIED
+   ========================= */
 .experience-page .xp-desc{
   margin-top: 14px !important;
   text-align: justify !important;
@@ -253,7 +244,7 @@ body.about-page .page__content p {
   opacity: 0.9;
 }
 
-/* Logo top-right corner (NOW A DIV, not an <a>) */
+/* Logo top-right corner */
 .experience-page .xp-logo{
   position: absolute;
   top: 24px;
@@ -261,9 +252,7 @@ body.about-page .page__content p {
   width: 58px;
   height: 58px;
   display: inline-block;
-
-  /* make sure it's never clickable */
-  pointer-events: none;
+  pointer-events: none; /* not clickable */
 }
 
 .experience-page .xp-logo img{
@@ -276,3 +265,8 @@ body.about-page .page__content p {
   background: #fff;
   padding: 6px;
 }
+
+
+
+
+
