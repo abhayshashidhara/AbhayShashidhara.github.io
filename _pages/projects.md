@@ -10,24 +10,22 @@ classes: projects-page
   {% for p in site.data.projects %}
   <div class="project-card">
 
-    <div class="project-image-wrap">
-      <img class="project-image"
-           src="{{ p.image | relative_url }}"
-           alt="{{ p.title }}">
-    </div>
-
     <div class="project-body">
       <h2 class="project-title">{{ p.title }}</h2>
+
+      <div class="project-image-wrap">
+        <img class="project-image"
+             src="{{ p.image | relative_url }}"
+             alt="{{ p.title }}">
+      </div>
+
       <p class="project-desc">{{ p.description }}</p>
 
       {% if p.stack %}
-<p class="project-stack-text">
-  <strong>
-    {{ p.stack | join: " | " }}
-  </strong>
-</p>
-{% endif %}
-
+      <p class="project-stack-text">
+        <strong>{{ p.stack | join: " | " }}</strong>
+      </p>
+      {% endif %}
 
       <div class="project-actions">
         {% if p.github_url %}
