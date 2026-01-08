@@ -46,11 +46,11 @@ body.about-page .page__content p {
   text-justify: auto !important;
 }
 
-/* Force ONE column + spacing */
+/* Force ONE column + spacing (bigger gaps) */
 .projects-page .projects-grid {
   display: grid !important;
   grid-template-columns: 1fr !important;
-  gap: 44px !important;
+  gap: 70px !important;           /* <-- BIGGER GAP between projects */
   margin-top: 18px !important;
 }
 
@@ -61,6 +61,16 @@ body.about-page .page__content p {
   border-radius: 18px !important;
   overflow: hidden !important;
   box-shadow: 0 14px 30px rgba(0,0,0,0.25) !important;
+
+  /* <-- Divider feel */
+  padding-bottom: 34px !important;
+  border-bottom: 2px solid rgba(255,255,255,0.10) !important;
+}
+
+/* Remove divider on the LAST project */
+.projects-page .projects-grid .project-card:last-child {
+  border-bottom: none !important;
+  padding-bottom: 0 !important;
 }
 
 /* Body */
@@ -95,18 +105,14 @@ body.about-page .page__content p {
   object-fit: cover !important;
 }
 
-/* ✅ FIRST PROJECT IMAGE ONLY (GoEmotions) — make it SMALLER */
-/* GoEmotions image ONLY (Project 1) */
-.projects-page /* FORCE shrink GoEmotions image anywhere it appears */
-img[src*="goemotions-csci5523.jpg"]{
+/* ✅ GoEmotions image ONLY — make it smaller */
+.projects-page img[src*="goemotions-csci5523.jpg"] {
   display: block !important;
   width: auto !important;
-  max-width: 320px !important;   /* make smaller: 280px / 300px */
+  max-width: 320px !important;   /* tweak: 280 / 300 / 350 */
   height: auto !important;
   margin: 16px auto 22px !important;
 }
-
-
 
 /* Description */
 .projects-page .projects-grid .project-desc {
@@ -163,6 +169,6 @@ img[src*="goemotions-csci5523.jpg"]{
 
   /* Keep GoEmotions reasonable on mobile */
   .projects-page img[src*="goemotions-csci5523.jpg"] {
-    max-width: 100% !important; /* on phones it should not overflow */
+    max-width: 100% !important;
   }
 }
