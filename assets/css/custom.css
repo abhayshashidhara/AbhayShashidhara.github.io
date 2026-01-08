@@ -15,7 +15,8 @@
    ABOUT PAGE ONLY — Justified text
    (Requires: classes: about-page in your about/index front-matter)
    ========================= */
-.about-page .page__content p {
+/* About page ONLY: justify paragraphs */
+.about-page .page__content p{
   text-align: justify !important;
   text-justify: inter-word !important;
 }
