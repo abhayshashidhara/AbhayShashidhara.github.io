@@ -30,7 +30,7 @@ body.about-page .page__content p {
 }
 
 /* =========================================================
-   PROJECTS PAGE ONLY — Layout + left aligned text + image sizing
+   PROJECTS PAGE ONLY — Layout + left aligned text + spacing
    ========================================================= */
 
 .projects-page .page__content {
@@ -48,7 +48,7 @@ body.about-page .page__content p {
 .projects-page .projects-grid {
   display: grid !important;
   grid-template-columns: 1fr !important;
-  gap: 70px !important;           /* bigger gaps */
+  gap: 70px !important;           /* bigger gaps between projects */
   margin-top: 18px !important;
 }
 
@@ -63,7 +63,7 @@ body.about-page .page__content p {
   padding-bottom: 8px !important;
 }
 
-/* subtle divider line inside each card */
+/* divider line in each card */
 .projects-page .projects-grid .project-card::after {
   content: "" !important;
   display: block !important;
@@ -85,7 +85,7 @@ body.about-page .page__content p {
   color: #ffffff !important;
 }
 
-/* Image wrap (below title) */
+/* Image wrap */
 .projects-page .projects-grid .project-card .project-image-wrap {
   background: #ffffff !important;
   padding: 14px !important;
@@ -104,13 +104,14 @@ body.about-page .page__content p {
   object-fit: cover !important;
 }
 
-/* ✅ GoEmotions image — shrink reliably */
+/* GoEmotions image shrink (reliable) */
 .projects-page .projects-grid .project-card:first-of-type .project-image-wrap img {
   width: auto !important;
-  max-width: 380px !important;     /* change to 320px if you want smaller */
+  max-width: 380px !important;  /* make 320px if you want smaller */
   margin: 12px auto 18px !important;
 }
 
+/* backup selector if ordering changes */
 .projects-page img[src*="goemotions-csci5523.jpg"],
 .projects-page img[src*="goemotions-csci5523.jpeg"],
 .projects-page img[src*="goemotions-csci5523.png"] {
@@ -126,13 +127,13 @@ body.about-page .page__content p {
   font-size: 16px !important;
 }
 
-/* Stack line */
+/* Stack */
 .projects-page .project-stack-text {
   margin: 0 0 16px 0 !important;
   color: rgba(255,255,255,0.92) !important;
 }
 
-/* Actions */
+/* Buttons */
 .projects-page .project-actions {
   display: flex !important;
   align-items: center !important;
@@ -140,7 +141,6 @@ body.about-page .page__content p {
   margin-top: 10px !important;
 }
 
-/* Buttons */
 .projects-page .project-btn {
   display: inline-flex !important;
   align-items: center !important;
@@ -164,14 +164,13 @@ body.about-page .page__content p {
   .projects-page .projects-grid .project-card .project-image-wrap img {
     max-width: 100% !important;
   }
-
   .projects-page .projects-grid .project-card:first-of-type .project-image-wrap img {
     max-width: 100% !important;
   }
 }
 
 /* =========================================================
-   EXPERIENCE PAGE — justify text + logo on the right corner
+   EXPERIENCE PAGE — justify text + logos top-right
    ========================================================= */
 
 .experience-page .xp{
@@ -181,7 +180,7 @@ body.about-page .page__content p {
 }
 
 .experience-page .xp-card{
-  position: relative;               /* allows absolute logo */
+  position: relative;
   padding: 26px 0;
   border-top: 1px solid rgba(0,0,0,0.12);
 }
@@ -191,20 +190,20 @@ body.about-page .page__content p {
 }
 
 .experience-page .xp-body{
-  padding-right: 90px;              /* space so text won't hit logo */
+  padding-right: 92px;   /* keeps text away from logo */
 }
 
-/* Justify only experience paragraphs */
+/* justify experience text */
 .experience-page .xp-desc{
   text-align: justify !important;
   text-justify: inter-word !important;
   hyphens: auto;
 }
 
-/* Right “corner” logo */
+/* logo in the corner */
 .experience-page .xp-logo{
   position: absolute;
-  top: 22px;
+  top: 18px;
   right: 0;
   width: 64px;
   height: 64px;
