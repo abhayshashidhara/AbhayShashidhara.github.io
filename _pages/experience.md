@@ -9,7 +9,8 @@ classes: experience-page
 
 *(December 2024 – June 2025)*
 
-During my internship at BOCK AI, I worked on end to end AI workflows for clinical and medical text use cases, from model experimentation to deployment ready pipelines. My core contribution was fine tuning compact transformer models including DistilGPT 2 to generate symptom conditioned diagnostic style text, and supporting iterative improvement through evaluation and refinement cycles. I also contributed to the training workflow on Google Cloud Vertex AI to shorten iteration time and make updates easier as the dataset evolved. In parallel, I collaborated with a team on an early prototype that transformed clinical instructions into short visual sequences using prompt based encoding and diffusion driven generation, to evaluate how multimodal generation could support healthcare focused applications.
+During my internship at BOCK AI, I worked on end to end AI workflows for clinical and medical text use cases, from model experimentation to deployment ready pipelines. My core contribution was fine tuning compact transformer models including DistilGPT 2 to generate symptom conditioned diagnostic style text, and supporting iterative improvement through evaluation and refinement cycles. I also contributed to the training workflow on Google Cloud Vertex AI to shorten iteration time and make updates easier as the dataset evolved. 
+In parallel, I collaborated with a team on an early prototype that transformed clinical instructions into short visual sequences using prompt based encoding and diffusion driven generation, to evaluate how multimodal generation could support healthcare focused applications.
 
 <img src="/images/experience/bockai.png" alt="BOCK AI logo" class="exp-logo" loading="lazy">
 
