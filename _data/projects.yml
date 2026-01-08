@@ -38,7 +38,7 @@
 
 - title: "Alzheimer’s Disease Database: Integrated Multi Modal Research Platform"
   description: "Developed a centralized Alzheimer’s disease database integrating genomic, proteomic, imaging, and clinical datasets to support cross modality analysis for diagnosis and research."
-  image: "/images/projects/alz.jpg"
+  image: "/images/projects/alz.jpeg"
   stack:
     - SQLAlchemy
     - Flask
@@ -55,8 +55,8 @@
     - RAG
     - PyMuPDF
     - Hugging Face Transformers
-    - PDF Parsing
-    - Embeddings
+    - pandas
+    - NLP
   github_url: "https://github.com/abhayshashidhara/ca_bot_project_rag"
   report_url: "/files/cabot.pdf" 
 
