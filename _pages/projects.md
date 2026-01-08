@@ -21,12 +21,13 @@ classes: projects-page
       <p class="project-desc">{{ p.description }}</p>
 
       {% if p.stack %}
-      <div class="project-stack">
-        {% for s in p.stack %}
-          <span class="stack-pill">{{ s }}</span>
-        {% endfor %}
-      </div>
-      {% endif %}
+<p class="project-stack-text">
+  <strong>
+    {{ p.stack | join: " | " }}
+  </strong>
+</p>
+{% endif %}
+
 
       <div class="project-actions">
         {% if p.github_url %}
