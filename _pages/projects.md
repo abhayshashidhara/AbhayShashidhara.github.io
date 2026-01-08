@@ -51,3 +51,4 @@ classes: projects-page
   </div> 
   {% endfor %}
 </div>
+ 
