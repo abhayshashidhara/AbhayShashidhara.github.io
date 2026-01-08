@@ -97,13 +97,15 @@ body.about-page .page__content p {
 
 /* ✅ FIRST PROJECT IMAGE ONLY (GoEmotions) — make it SMALLER */
 /* GoEmotions image ONLY (Project 1) */
-.projects-page img[src*="goemotions-csci5523.jpg"]{
-  max-width: 320px !important;   /* <- make smaller: 280px / 300px / 350px */
-  width: 100% !important;
-  height: auto !important;
+.projects-page /* FORCE shrink GoEmotions image anywhere it appears */
+img[src*="goemotions-csci5523.jpg"]{
   display: block !important;
+  width: auto !important;
+  max-width: 320px !important;   /* make smaller: 280px / 300px */
+  height: auto !important;
   margin: 16px auto 22px !important;
 }
+
 
 
 /* Description */
