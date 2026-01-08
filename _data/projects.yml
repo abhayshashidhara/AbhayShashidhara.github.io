@@ -7,6 +7,7 @@
     - Pandas
     - NLP
     - Fine-Tuning
+    - BERT
   github_url: "https://github.com/abhayshashidhara/Comparative_emotion_classification_using_ml_models"
   report_url: "/files/Final_Paper_5523 (2).pdf"
 
@@ -18,19 +19,22 @@
     - Soft-Keys
     - Pinecone
     - LLMs
+    - RAG
   github_url: "https://github.com/abhayshashidhara/soft_foriegn_keys_db"
   report_url: "/files/DBS Lets Query report (1).pdf"
 
-- title: "Project 3 Placeholder"
-  description: "Short placeholder description. Replace this later."
-  image: "/images/projects/project-3.jpg"
+- title: "Diagnostic Tool for Parkinson’s Disease: CNN and RAG-Assisted Clinical Summary"
+  description: "Built a Parkinson’s screening prototype combining LLM-based symptom intake with a CNN spiral-test classifier, generating a structured report "
+  image: "/images/projects/park.jpg"
   stack:
-    - Python
-    - NLP
-    - ML
-    - Deployment
-  github_url: "https://github.com/abhayshashidhara"
-  report_url: "/files/project-3-report.pdf"
+    - CNN (ResNet18)
+    - Spiral Test
+    - RAG
+    - FAISS
+    - scikit-learn
+  github_url: "https://github.com/abhayshashidhara/parkinsonstool"
+  report_url: "/files/THEFinallllthesis[1].pdf"
+
 
 - title: "Project 4 Placeholder"
   description: "Short placeholder description. Replace this later."
