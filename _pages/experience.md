@@ -2,7 +2,7 @@
 title: "Experience"
 layout: single
 permalink: /experience/
-classes: experience-page
+classes: experience-page 
 ---
 
 <div class="xp">
