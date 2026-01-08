@@ -1,5 +1,5 @@
-- title: "GoEmotions: Classical ML vs Transformer Models"
-  description: "Course project for **CSCI 5523 (Introduction to Data Mining)**. Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
+- title: "GoEmotions: Classical vs Pre-Trained ML Models"
+  description: "Course project for CSCI 5523 (Introduction to Data Mining). Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
   image: "/images/projects/goemotions-csci5523.jpg"
   stack:
     - Hugging Face
