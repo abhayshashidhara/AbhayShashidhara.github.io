@@ -175,6 +175,10 @@ body.about-page .page__content p {
    EXPERIENCE PAGE
    ========================= */
 
+/* =========================
+   EXPERIENCE PAGE
+   ========================= */
+
 .experience-page .xp{
   max-width: 980px;
   margin: 0 auto;
@@ -213,7 +217,7 @@ body.about-page .page__content p {
   opacity: 0.85;
 }
 
-/* Italic timeline */
+/* Timeline */
 .experience-page .xp-meta{
   margin-top: 6px;
   font-style: italic;
@@ -221,15 +225,19 @@ body.about-page .page__content p {
   opacity: 0.85;
 }
 
-/* Justify the paragraph */
+/* JUSTIFY (bulletproof) */
 .experience-page .xp-desc{
   margin-top: 14px;
   text-align: justify !important;
   text-justify: inter-word !important;
-  hyphens: auto;
+
+  /* hyphenation needs these for some browsers */
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+  -ms-hyphens: auto !important;
 }
 
-/* Remove underline from links inside the paragraph too */
+/* Remove underline from links inside paragraph */
 .experience-page .xp-desc a{
   text-decoration: none !important;
   border-bottom: 0 !important;
@@ -239,7 +247,7 @@ body.about-page .page__content p {
   opacity: 0.9;
 }
 
-/* Logo top-right corner */
+/* Logo top-right corner (NOW A DIV, not an <a>) */
 .experience-page .xp-logo{
   position: absolute;
   top: 24px;
@@ -247,8 +255,9 @@ body.about-page .page__content p {
   width: 58px;
   height: 58px;
   display: inline-block;
-  text-decoration: none !important;
-  border-bottom: 0 !important;
+
+  /* make sure it's never clickable */
+  pointer-events: none;
 }
 
 .experience-page .xp-logo img{
