@@ -261,3 +261,23 @@ body.experience-page .page__content .exp-logo img{
   background: #fff;
   padding: 6px;
 }
+/* =========================
+   PUBLICATIONS (simple polish)
+   ========================= */
+
+body.publications-page .page__content h3{
+  margin-top: 26px !important;
+  margin-bottom: 8px !important;
+}
+
+/* style ONLY the download links that point into /files/ */
+body.publications-page .page__content a[href^="/files/"]{
+  display: inline-block !important;
+  margin-top: 8px !important;
+  padding: 8px 12px !important;
+  border-radius: 10px !important;
+  text-decoration: none !important;
+  font-weight: 800 !important;
+  border: 1px solid rgba(0,0,0,0.12) !important;
+}
+
