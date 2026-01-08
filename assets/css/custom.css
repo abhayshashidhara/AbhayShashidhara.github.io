@@ -12,31 +12,31 @@
 }
 
 /* =========================
-   Paragraph alignment
+   Paragraph alignment (site-wide)
    ========================= */
 .page__content p {
   text-align: justify;
   text-justify: inter-word;
 }
 
-/* =========================
-   Projects page ONLY
-   ========================= */
+/* =========================================================
+   PROJECTS PAGE ONLY (layout + spacing + image sizing)
+   ========================================================= */
+
+/* Widen content area only on projects */
 .projects-page .page__content {
   max-width: 1100px;
 }
 
-/* IMPORTANT:
-   You said: heading -> image -> text, then a GAP, then next project.
-   So we use ONE column + big vertical spacing. */
+/* One column + BIG vertical gap */
 .projects-page .projects-grid {
   display: grid;
-  grid-template-columns: 1fr;   /* <- was 2 columns, now 1 */
-  gap: 44px;                   /* big gap between projects */
+  grid-template-columns: 1fr;
+  gap: 44px;
   margin-top: 18px;
 }
 
-/* Project card */
+/* Card */
 .projects-page .project-card {
   background: #0b0b23;
   border: 1px solid rgba(255, 255, 255, 0.08);
@@ -45,7 +45,7 @@
   box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
-/* Body (title + image + text all inside now) */
+/* Body */
 .projects-page .project-body {
   padding: 22px;
 }
@@ -58,23 +58,24 @@
   color: #ffffff;
 }
 
-/* Image container (now BELOW title) */
+/* Image wrap (below title) */
 .projects-page .project-image-wrap {
   background: #ffffff;
   padding: 14px;
   border-radius: 14px;
-  margin: 0 0 18px 0;          /* space after image */
+  margin: 0 0 18px 0;
 }
 
-/* Project image */
-.projects-page .page__content img {
-  max-width: 100%;
-  max-height: 320px;        /* 👈 controls size */
-  object-fit: cover;
+/* Image itself: centered + constrained size */
+.projects-page .project-image {
   display: block;
-  margin: 16px 0 18px 0;
+  width: 100%;
+  max-width: 620px;     /* 🔥 adjust smaller/larger if needed */
+  height: auto;
+  margin: 0 auto;       /* centers image */
+  border-radius: 12px;
+  object-fit: cover;
 }
-
 
 /* Description */
 .projects-page .project-desc {
@@ -82,21 +83,26 @@
   color: rgba(255, 255, 255, 0.86);
   line-height: 1.65;
   font-size: 16px;
+
+  /* ✅ Fix the weird spacing caused by justify */
+  text-align: left;
 }
 
-/* Stack line as bold text with | separators (your new projects.md uses this) */
+/* Stack line (bold text with | separators) */
 .projects-page .project-stack-text {
   margin: 0 0 16px 0;
   color: rgba(255, 255, 255, 0.92);
 }
 
-/* Buttons */
+/* Buttons row */
 .projects-page .project-actions {
   display: flex;
-  gap: 12px;
+  align-items: center;
+  gap: 10px;
   margin-top: 10px;
 }
 
+/* Buttons */
 .projects-page .project-btn {
   display: inline-flex;
   align-items: center;
@@ -124,9 +130,16 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
+/* Optional separator between GitHub and Read more (if you added it in projects.md) */
+.projects-page .project-sep {
+  color: rgba(255, 255, 255, 0.55);
+  font-weight: 900;
+  margin: 0 2px;
+}
+
 /* Mobile */
 @media (max-width: 900px) {
   .projects-page .project-image {
-    height: 240px;
+    max-width: 100%;
   }
 }
