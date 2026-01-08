@@ -16,11 +16,10 @@
    (Requires: classes: about-page in your about/index front-matter)
    ========================= */
 /* About page ONLY: justify paragraphs */
-.about-page .page__content p{
+ body.about-page .page__content p {
   text-align: justify !important;
   text-justify: inter-word !important;
 }
-
 /* =========================================================
    PROJECTS PAGE ONLY — FORCE layout + image sizing
    ========================================================= */
