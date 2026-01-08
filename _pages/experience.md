@@ -17,9 +17,9 @@ classes: experience-page
       Bengaluru, India
     </div>
 
-    <div class="xp-meta">(December 2024 – June 2025)</div>
+    <div class="xp-meta" style="font-style: italic;">(December 2024 – June 2025)</div>
 
-    <p class="xp-desc">
+    <p class="xp-desc" style="text-align: justify; text-justify: inter-word; hyphens: auto;">
       During my internship at BOCK AI, I worked on end to end AI workflows for clinical and medical text use cases, from model experimentation to deployment ready pipelines. My core contribution was fine tuning compact transformer models including DistilGPT 2 to generate symptom conditioned diagnostic style text, and supporting iterative improvement through evaluation and refinement cycles. I also contributed to the training workflow on Google Cloud Vertex AI to shorten iteration time and make updates easier as the dataset evolved. In parallel, I collaborated with a team on an early prototype that transformed clinical instructions into short visual sequences using prompt based encoding and diffusion driven generation, to evaluate how multimodal generation could support healthcare focused applications.
     </p>
   </div>
@@ -41,9 +41,9 @@ classes: experience-page
       Bengaluru, India
     </div>
 
-    <div class="xp-meta">(November 2022 – December 2022)</div>
+    <div class="xp-meta" style="font-style: italic;">(November 2022 – December 2022)</div>
 
-    <p class="xp-desc">
+    <p class="xp-desc" style="text-align: justify; text-justify: inter-word; hyphens: auto;">
       At the Center of Excellence for Computational Genomics, RVCE, I contributed to research prototyping focused on how machine learning can support drug discovery and early stage screening. I explored diffusion based molecular generation and constraint guided refinement to improve candidate feasibility, then used ADMET based property screening to assess drug likeness and early safety signals, with a focus on COVID related targets. I also had the opportunity to present this work at the
       <a href="https://www.bangalorenewsnetwork.com/news_detail.php?f_news_id=2377" target="_blank" rel="noopener">AIML BIO International Conference (RVCE, December 2022)</a>.
     </p>
