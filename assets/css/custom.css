@@ -266,7 +266,20 @@ body.about-page .page__content p {
   padding: 6px;
 }
 
+body.experience-page .page__content .xp-meta,
+body.experience-page .page__content .xp-meta *{
+  font-style: italic !important;
+}
 
+/* Force ONLY your experience description to justify */
+body.experience-page .page__content p.xp-desc{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+
+  hyphens: auto !important;
+  -webkit-hyphens: auto !important;
+  -ms-hyphens: auto !important;
+}
 
 
 
