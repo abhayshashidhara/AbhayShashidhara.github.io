@@ -171,6 +171,8 @@ body.about-page .page__content p {
 
 
 
+
+
 /* =========================
    EXPERIENCE PAGE
    ========================= */
@@ -217,21 +219,25 @@ body.about-page .page__content p {
   opacity: 0.85;
 }
 
-/* Timeline */
-.experience-page .xp-meta{
-  margin-top: 6px;
-  font-style: italic;
-  font-size: 15.5px;
-  opacity: 0.85;
+/* =========================
+   EXPERIENCE PAGE (FORCE)
+   ========================= */
+
+/* Timeline MUST be italic */
+.experience-page .xp-meta,
+.experience-page .xp-meta em{
+  font-style: italic !important;
+  font-size: 15.5px !important;
+  opacity: 0.85 !important;
+  margin-top: 6px !important;
 }
 
-/* JUSTIFY (bulletproof) */
+/* Description MUST be justified */
 .experience-page .xp-desc{
-  margin-top: 14px;
+  margin-top: 14px !important;
   text-align: justify !important;
   text-justify: inter-word !important;
 
-  /* hyphenation needs these for some browsers */
   hyphens: auto !important;
   -webkit-hyphens: auto !important;
   -ms-hyphens: auto !important;
