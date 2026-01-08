@@ -24,7 +24,7 @@
   report_url: "/files/DBS Lets Query report (1).pdf"
 
 - title: "Diagnostic Tool for Parkinson’s Disease: CNN and RAG-Assisted Clinical Summary"
-  description: "Built a Parkinson’s screening prototype combining LLM-based symptom intake with a CNN spiral-test classifier, generating a structured report "
+  description: "Built a Parkinson’s screening prototype that combines LLM based symptom intake with a CNN spiral test classifier to generate a structured report. RAG was used to retrieve and cite relevant clinical references during generation, ensuring the narrative is evidence grounded and reducing unsupported statements. "
   image: "/images/projects/park.jpg"
   stack:
     - CNN (ResNet18)
