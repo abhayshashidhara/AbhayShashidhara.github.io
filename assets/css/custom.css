@@ -95,9 +95,14 @@ body.about-page .page__content p {
   object-fit: cover !important;
 }
 
-/* ✅ FIRST PROJECT IMAGE ONLY (GoEmotions) — reduce size by filename */
-.projects-page .projects-grid .project-card .project-image-wrap img[src*="goemotions-csci5523.jpg"] {
-  max-width: 520px !important; /* reduce this further if you want */
+/* ✅ FIRST PROJECT IMAGE ONLY (GoEmotions) — make it SMALLER */
+.projects-page img[src*="goemotions-csci5523.jpg"] {
+  display: block !important;
+  width: 100% !important;
+  max-width: 360px !important;   /* <<< SMALL size (change to 300px if you want tinier) */
+  height: auto !important;
+  margin: 18px auto 24px !important;
+  border-radius: 12px !important;
 }
 
 /* Description */
@@ -151,5 +156,10 @@ body.about-page .page__content p {
 @media (max-width: 900px) {
   .projects-page .projects-grid .project-card .project-image-wrap img {
     max-width: 100% !important;
+  }
+
+  /* Keep GoEmotions reasonable on mobile */
+  .projects-page img[src*="goemotions-csci5523.jpg"] {
+    max-width: 100% !important; /* on phones it should not overflow */
   }
 }
