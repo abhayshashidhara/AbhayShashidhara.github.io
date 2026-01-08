@@ -12,16 +12,10 @@
 }
 
 /* =========================
-   ABOUT / HOME: Justify text ONLY here
+   ABOUT PAGE ONLY — Justified text
+   (Requires: classes: about-page in your about/index front-matter)
    ========================= */
-/* About page (Minimal Mistakes typically uses this class) */
-.page--about .page__content p {
-  text-align: justify !important;
-  text-justify: inter-word !important;
-}
-
-/* If your homepage uses layout--home, justify there too */
-.layout--home .page__content p {
+.about-page .page__content p {
   text-align: justify !important;
   text-justify: inter-word !important;
 }
@@ -35,7 +29,7 @@
   max-width: 1100px !important;
 }
 
-/* Never justify on Projects page (kills ugly gaps) */
+/* Never justify on Projects page */
 .projects-page .page__content p {
   text-align: left !important;
   text-justify: auto !important;
@@ -79,27 +73,21 @@
   margin: 0 0 18px 0 !important;
 }
 
-/* Default size for project images */
-.projects-page .projects-grid .project-card img.project-image {
+/* Default: project images (works even if image has NO class) */
+.projects-page .projects-grid .project-card .project-image-wrap img {
   display: block !important;
   width: 100% !important;
-  max-width: 520px !important;   /* default size */
+  max-width: 720px !important;   /* default for other project images */
   height: auto !important;
-  margin: 0 auto !important;     /* centered */
+  margin: 0 auto !important;
   border-radius: 12px !important;
   object-fit: cover !important;
 }
 
-/* ✅ ONLY this exact image gets reduced (by filename in its src path) */
-.projects-page .projects-grid .project-card img.project-image[src*="goemotions-csci5523.jpg"] {
-  max-width: 420px !important;   /* <-- make this smaller/bigger */
+/* ✅ ONLY GoEmotions image: shrink by filename (this is the “path” match) */
+.projects-page .projects-grid .project-card .project-image-wrap img[src*="goemotions-csci5523.jpg"] {
+  max-width: 520px !important;   /* make smaller/bigger */
 }
-
-/* If your image sits in a folder and you want to be extra-specific, use this instead:
-.projects-page .projects-grid .project-card img.project-image[src*="assets/images/goemotions-csci5523.jpg"] {
-  max-width: 420px !important;
-}
-*/
 
 /* Description: remove weird spacing */
 .projects-page .projects-grid .project-desc {
@@ -151,12 +139,7 @@
 
 /* Mobile */
 @media (max-width: 900px) {
-  .projects-page .projects-grid .project-card img.project-image {
+  .projects-page .projects-grid .project-card .project-image-wrap img {
     max-width: 100% !important;
-  }
-
-  /* Keep it smaller on mobile too (optional) */
-  .projects-page .projects-grid .project-card img.project-image[src*="goemotions-csci5523.jpg"] {
-    max-width: 100% !important; /* or keep 420px if you want */
   }
 }
