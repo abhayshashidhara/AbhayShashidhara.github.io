@@ -1,12 +1,12 @@
-- title: "GoEmotions (CSCI 5523): Classical ML vs Transformer Models"
-  description: "Course project for CSCI 5523 (Introduction to Data Mining). Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
+- title: "GoEmotions: Classical ML vs Transformer Models"
+  description: "Course project for **CSCI 5523 (Introduction to Data Mining)**. Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
   image: "/images/projects/goemotions-csci5523.jpg"
   stack:
-    - Python
+    - Hugging Face
     - TF-IDF
-    - DistilBERT
-    - MobileBERT
-    - Evaluation
+    - Pandas
+    - NLP
+    - Fine-Tuning
   github_url: "https://github.com/abhayshashidhara/Comparative_emotion_classification_using_ml_models"
   report_url: "/files/CSCI5523-GoEmotions-Final-Report.pdf"
 
