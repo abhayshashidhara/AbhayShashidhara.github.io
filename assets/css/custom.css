@@ -12,16 +12,26 @@
 }
 
 /* =========================
-   ABOUT PAGE ONLY — Justified text
-   (Requires: classes: about-page in your about/index front-matter)
+   ABOUT PAGE — Justify text
+   (Works if you have EITHER: classes: about-page OR wrapper: <div class="about-justify" markdown="1">)
    ========================= */
-/* About page ONLY: justify paragraphs */
- body.about-page .page__content p {
+
+/* If you use front-matter: classes: about-page */
+body.about-page .page__content p {
   text-align: justify !important;
   text-justify: inter-word !important;
+  hyphens: auto;
 }
+
+/* If you use wrapper div: <div class="about-justify" markdown="1"> */
+.about-justify p {
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto;
+}
+
 /* =========================================================
-   PROJECTS PAGE ONLY — FORCE layout + image sizing
+   PROJECTS PAGE ONLY — Layout + left aligned text + image sizing
    ========================================================= */
 
 /* Make sure projects page wrapper works */
@@ -29,8 +39,9 @@
   max-width: 1100px !important;
 }
 
-/* Never justify on Projects page */
-.projects-page .page__content p {
+/* Projects page: NEVER justify */
+.projects-page .page__content p,
+.projects-page .project-desc {
   text-align: left !important;
   text-justify: auto !important;
 }
@@ -73,29 +84,28 @@
   margin: 0 0 18px 0 !important;
 }
 
-/* Default: project images (works even if image has NO class) */
+/* Default: all project images */
 .projects-page .projects-grid .project-card .project-image-wrap img {
   display: block !important;
   width: 100% !important;
-  max-width: 720px !important;   /* default for other project images */
+  max-width: 720px !important;
   height: auto !important;
   margin: 0 auto !important;
   border-radius: 12px !important;
   object-fit: cover !important;
 }
 
-/* ✅ ONLY GoEmotions image: shrink by filename (this is the “path” match) */
+/* ✅ FIRST PROJECT IMAGE ONLY (GoEmotions) — reduce size by filename */
 .projects-page .projects-grid .project-card .project-image-wrap img[src*="goemotions-csci5523.jpg"] {
-  max-width: 520px !important;   /* make smaller/bigger */
+  max-width: 520px !important; /* reduce this further if you want */
 }
 
-/* Description: remove weird spacing */
+/* Description */
 .projects-page .projects-grid .project-desc {
   margin: 0 0 14px 0 !important;
   color: rgba(255,255,255,0.86) !important;
   line-height: 1.65 !important;
   font-size: 16px !important;
-  text-align: left !important;
 }
 
 /* Stack line */
@@ -143,15 +153,3 @@
     max-width: 100% !important;
   }
 }
-/* About page: justify ONLY inside this wrapper */
-.about-justify p{
-  text-align: justify !important;
-  text-justify: inter-word !important;
-  hyphens: auto;
-}
-/* About page ONLY: justify inside wrapper */
-.about-justify p{
-  text-align: justify !important;
-  text-justify: inter-word !important;
-}
-
