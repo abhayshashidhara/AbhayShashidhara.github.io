@@ -17,4 +17,4 @@ Machine learning–driven diffusion model to generate candidate molecules target
 ### 2) [Impact of Nitrogen Deficiency on the Growth and Yield of *Bacopa monnieri*: A Computational and Experimental Study](https://metszetjournal.com/volume-9-issue-9/)
 Combined experimental and computational analysis of how nitrogen deficiency affects *Bacopa monnieri* growth and yield. This paper highlights measurable reductions under nitrogen-deficient conditions.
 
-[Download PDF](/files/metzet 4630 R.pdf)
+[Download PDF](/files/metzet-4630-R.pdf)
