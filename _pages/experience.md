@@ -20,7 +20,7 @@ classes: experience-page
       <div class="xp-meta">December 2024 – June 2025</div>
 
       <p class="xp-desc">
-        Worked on practical AI workflows for clinical and medical text applications, supporting data preparation, model experimentation, and deployment-ready pipelines. Contributed to building structured datasets and improving model outputs for real-world use cases.
+        During my internship at BOCK AI, I worked on end to end AI workflows for clinical and medical text use cases, from dataset preparation to model experimentation and deployment ready pipelines. My core contribution was fine tuning compact transformer models to generate symptom conditioned diagnostic style text, and supporting iterative improvement through evaluation and refinement cycles. I also contributed to the training workflow on Google Cloud Vertex AI to shorten iteration time and make updates easier as the dataset evolved. In parallel, I collaborated with a team on an early prototype that transformed clinical instructions into short visual sequences using prompt based encoding and diffusion driven generation, to evaluate how multimodal generation could support healthcare focused applications
       </p>
     </div>
 
@@ -42,7 +42,8 @@ classes: experience-page
       <div class="xp-meta">November 2022 – December 2022</div>
 
       <p class="xp-desc">
-        Supported research-focused work in computational genomics and molecular discovery, exploring modern generative modeling ideas and evaluation practices used in early-stage drug design pipelines. Assisted with experiments and validation workflows for candidate quality and feasibility.
+       At the Center of Excellence for Computational Genomics, RVCE, I worked on research prototyping that explored how machine learning can support drug discovery workflows. I experimented with diffusion based molecular generation and constraint guided refinement, then used standard ADMET screening tools to evaluate drug likeness and basic safety signals. Through this work, I gained practical exposure to applying ML methods for early stage candidate generation and screening for COVID related targets. I also had the opportunity to present this work at the [AIML BIO International Conference (RVCE, December 2022)](https://www.bangalorenewsnetwork.com/news_detail.php?f_news_id=2377).
+
       </p>
     </div>
 
