@@ -143,3 +143,9 @@
     max-width: 100% !important;
   }
 }
+/* About page: justify ONLY inside this wrapper */
+.about-justify p{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto;
+}
