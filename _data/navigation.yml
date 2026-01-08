@@ -14,5 +14,6 @@ main:
     url: /experience/
   - title: "Publications"
     url: /publications/
-  - title: "CV"
-    url: /cv/
+  - title: "Resume"
+  url: /files/Abhay Shashidhara(RESUME).pdf
+
