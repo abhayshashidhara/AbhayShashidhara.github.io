@@ -190,7 +190,18 @@ body.about-page .page__content p {
 }
 
 .experience-page .xp-body{
-  padding-right: 92px;   /* keeps text away from logo */
+  padding-right: 110px;  /* more space so text never hits the logo */
+}
+
+/* Make company line stand out a bit */
+.experience-page .xp-org{
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Timeline look (italics) */
+.experience-page .xp-meta{
+  font-style: italic;
 }
 
 /* justify experience text */
@@ -198,6 +209,15 @@ body.about-page .page__content p {
   text-align: justify !important;
   text-justify: inter-word !important;
   hyphens: auto;
+}
+
+/* Remove blue + underline for links on Experience page (still clickable) */
+.experience-page a{
+  color: inherit !important;
+  text-decoration: none !important;
+}
+.experience-page a:hover{
+  text-decoration: underline !important;
 }
 
 /* logo in the corner */
@@ -216,4 +236,15 @@ body.about-page .page__content p {
   object-fit: contain;
   display: block;
   border-radius: 10px;
+}
+
+/* Mobile safety: logo won’t overlap */
+@media (max-width: 700px){
+  .experience-page .xp-body{
+    padding-right: 0;
+  }
+  .experience-page .xp-logo{
+    position: static;
+    margin-top: 14px;
+  }
 }
