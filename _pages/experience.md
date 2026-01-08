@@ -21,7 +21,7 @@ In parallel, I collaborated with a team on an early prototype that transformed c
 
 *(November 2022 – December 2022)*
 
-At the Center of Excellence for Computational Genomics, RVCE, I contributed to research prototyping focused on how machine learning can support drug discovery and early stage screening. I explored diffusion based molecular generation and constraint guided refinement to improve candidate feasibility, then used ADMET based property screening to assess drug likeness and early safety signals, with a focus on COVID related targets.
+At the Center of Excellence for Computational Genomics (RVCE), I worked on early-stage research prototyping to understand how machine learning can support drug discovery, especially in the screening and prioritization of candidate molecules. I explored diffusion-based molecular generation and constraint-guided refinement to propose chemically plausible candidates, then evaluated them using ADMET-driven property screening to assess drug-likeness and early safety signals. This work was carried out with a focus on COVID-related targets, helping connect model outputs with practical considerations in real-world discovery workflows.
 
 I also had the opportunity to present this work at the [AIML BIO International Conference (RVCE, December 2022)](https://www.bangalorenewsnetwork.com/news_detail.php?f_news_id=2377).
 
