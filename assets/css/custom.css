@@ -13,7 +13,6 @@
 
 /* =========================
    ABOUT PAGE — Justify text
-   (Works if you have EITHER: classes: about-page OR wrapper: <div class="about-justify" markdown="1">)
    ========================= */
 
 /* If you use front-matter: classes: about-page */
@@ -34,7 +33,6 @@ body.about-page .page__content p {
    PROJECTS PAGE ONLY — Layout + left aligned text + image sizing
    ========================================================= */
 
-/* Make sure projects page wrapper works */
 .projects-page .page__content {
   max-width: 1100px !important;
 }
@@ -46,11 +44,11 @@ body.about-page .page__content p {
   text-justify: auto !important;
 }
 
-/* Force ONE column + spacing (bigger gaps) */
+/* One column + bigger separation */
 .projects-page .projects-grid {
   display: grid !important;
   grid-template-columns: 1fr !important;
-  gap: 70px !important;           /* <-- BIGGER GAP between projects */
+  gap: 70px !important;           /* bigger gaps */
   margin-top: 18px !important;
 }
 
@@ -61,16 +59,17 @@ body.about-page .page__content p {
   border-radius: 18px !important;
   overflow: hidden !important;
   box-shadow: 0 14px 30px rgba(0,0,0,0.25) !important;
-
-  /* <-- Divider feel */
-  padding-bottom: 34px !important;
-  border-bottom: 2px solid rgba(255,255,255,0.10) !important;
+  position: relative !important;
+  padding-bottom: 8px !important;
 }
 
-/* Remove divider on the LAST project */
-.projects-page .projects-grid .project-card:last-child {
-  border-bottom: none !important;
-  padding-bottom: 0 !important;
+/* subtle divider line inside each card */
+.projects-page .projects-grid .project-card::after {
+  content: "" !important;
+  display: block !important;
+  height: 1px !important;
+  background: rgba(255,255,255,0.10) !important;
+  margin: 22px 22px 0 22px !important;
 }
 
 /* Body */
@@ -105,13 +104,18 @@ body.about-page .page__content p {
   object-fit: cover !important;
 }
 
-/* ✅ GoEmotions image ONLY — make it smaller */
-.projects-page img[src*="goemotions-csci5523.jpg"] {
-  display: block !important;
+/* ✅ GoEmotions image — shrink reliably */
+.projects-page .projects-grid .project-card:first-of-type .project-image-wrap img {
   width: auto !important;
-  max-width: 320px !important;   /* tweak: 280 / 300 / 350 */
-  height: auto !important;
-  margin: 16px auto 22px !important;
+  max-width: 380px !important;     /* change to 320px if you want smaller */
+  margin: 12px auto 18px !important;
+}
+
+.projects-page img[src*="goemotions-csci5523.jpg"],
+.projects-page img[src*="goemotions-csci5523.jpeg"],
+.projects-page img[src*="goemotions-csci5523.png"] {
+  width: auto !important;
+  max-width: 380px !important;
 }
 
 /* Description */
@@ -155,118 +159,62 @@ body.about-page .page__content p {
   color: #ffffff !important;
 }
 
-/* Separator (if you add it in projects.md) */
-.projects-page .project-sep {
-  color: rgba(255,255,255,0.55) !important;
-  font-weight: 900 !important;
-}
-
 /* Mobile */
 @media (max-width: 900px) {
   .projects-page .projects-grid .project-card .project-image-wrap img {
     max-width: 100% !important;
   }
 
-  /* Keep GoEmotions reasonable on mobile */
-  .projects-page img[src*="goemotions-csci5523.jpg"] {
+  .projects-page .projects-grid .project-card:first-of-type .project-image-wrap img {
     max-width: 100% !important;
   }
 }
+
 /* =========================================================
-   EXPERIENCE PAGE ONLY — short paragraphs + right logo
-   Requires front-matter: classes: experience-page
+   EXPERIENCE PAGE — justify text + logo on the right corner
    ========================================================= */
 
-body.experience-page .xp{
+.experience-page .xp{
   max-width: 980px;
   margin: 0 auto;
   padding: 8px 0 40px;
 }
 
-body.experience-page .xp-card{
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 18px;
+.experience-page .xp-card{
+  position: relative;               /* allows absolute logo */
   padding: 26px 0;
   border-top: 1px solid rgba(0,0,0,0.12);
 }
 
-body.experience-page .xp-card:first-of-type{
+.experience-page .xp-card:first-of-type{
   border-top: none;
 }
 
-body.experience-page .xp-body{
-  flex: 1;
-  min-width: 0;
+.experience-page .xp-body{
+  padding-right: 90px;              /* space so text won't hit logo */
 }
 
-body.experience-page .xp-role{
-  margin: 0 0 10px 0;
-  font-size: 24px;
-  font-weight: 850;
+/* Justify only experience paragraphs */
+.experience-page .xp-desc{
+  text-align: justify !important;
+  text-justify: inter-word !important;
+  hyphens: auto;
 }
 
-body.experience-page .xp-org{
-  font-size: 15.5px;
-  font-weight: 650;
-  opacity: 0.9;
+/* Right “corner” logo */
+.experience-page .xp-logo{
+  position: absolute;
+  top: 22px;
+  right: 0;
+  width: 64px;
+  height: 64px;
+  display: inline-block;
 }
 
-body.experience-page .xp-org a{
-  text-decoration: none;
-}
-
-body.experience-page .xp-org a:hover{
-  text-decoration: underline;
-}
-
-body.experience-page .xp-dot{
-  margin: 0 6px;
-  opacity: 0.7;
-}
-
-body.experience-page .xp-meta{
-  margin-top: 6px;
-  font-size: 14px;
-  opacity: 0.75;
-}
-
-body.experience-page .xp-desc{
-  margin: 14px 0 0 0;
-  line-height: 1.7;
-  max-width: 760px;
-}
-
-/* Right-side logo */
-body.experience-page .xp-logo{
-  flex: 0 0 auto;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 56px;
-  height: 56px;
-  border-radius: 12px;
-  background: #ffffff;
-  border: 1px solid rgba(0,0,0,0.10);
-  padding: 6px;
-  text-decoration: none;
-}
-
-body.experience-page .xp-logo img{
-  width: 100%;
-  height: 100%;
+.experience-page .xp-logo img{
+  width: 64px;
+  height: 64px;
   object-fit: contain;
-  border-radius: 8px;
-}
-
-/* Mobile: logo goes below */
-@media (max-width: 860px){
-  body.experience-page .xp-card{
-    flex-direction: column;
-  }
-  body.experience-page .xp-logo{
-    width: 52px;
-    height: 52px;
-  }
+  display: block;
+  border-radius: 10px;
 }
