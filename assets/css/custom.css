@@ -172,3 +172,90 @@ body.about-page .page__content p {
     max-width: 100% !important;
   }
 }
+/* =========================================================
+   EXPERIENCE PAGE ONLY — cards + right-side logo
+   Requires front-matter: classes: experience-page
+   ========================================================= */
+
+body.experience-page .xp{
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 8px 0 40px;
+}
+
+body.experience-page .xp-card{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 22px;
+  padding: 26px 0;
+  border-top: 1px solid rgba(0,0,0,0.12);
+}
+
+body.experience-page .xp-card:first-of-type{
+  border-top: none;
+}
+
+body.experience-page .xp-body{
+  flex: 1;
+  min-width: 0;
+}
+
+body.experience-page .xp-role{
+  margin: 0;
+  font-size: 22px;
+  font-weight: 800;
+}
+
+body.experience-page .xp-org{
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+body.experience-page .xp-meta{
+  margin-top: 6px;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+body.experience-page .xp-summary{
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+body.experience-page .xp-bullets{
+  margin: 0;
+  padding-left: 18px;
+}
+
+body.experience-page .xp-bullets li{
+  margin: 8px 0;
+}
+
+body.experience-page .xp-logo{
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+body.experience-page .xp-logo img{
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.10);
+  padding: 6px;
+}
+
+/* Mobile: logo drops below nicely */
+@media (max-width: 860px){
+  body.experience-page .xp-card{
+    flex-direction: column;
+  }
+  body.experience-page .xp-logo{
+    justify-content: flex-start;
+  }
+}
