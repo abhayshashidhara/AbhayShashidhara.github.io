@@ -172,56 +172,56 @@ body.about-page .page__content p {
    EXPERIENCE PAGE (NO XP WRAPPER)
    ========================= */
 
-/* Center the page content area */
+/* =========================
+   EXPERIENCE PAGE (NO XP)
+   ========================= */
+
 body.experience-page .page__content{
   max-width: 980px !important;
 }
 
-/* Card */
-body.experience-page .page__content .xp-card{
+body.experience-page .page__content .exp-card{
   position: relative;
   padding: 32px 0;
   border-top: 1px solid rgba(0,0,0,0.12);
 }
 
-body.experience-page .page__content .xp-card:first-of-type{
+body.experience-page .page__content .exp-card:first-of-type{
   border-top: none;
 }
 
-/* Keep text away from logo */
-body.experience-page .page__content .xp-body{
+body.experience-page .page__content .exp-body{
   padding-right: 96px;
   min-width: 0;
 }
 
-/* Company line */
-body.experience-page .page__content .xp-org{
+body.experience-page .page__content .exp-org{
   font-size: 18px;
   font-weight: 800;
   margin-top: 6px;
 }
 
-body.experience-page .page__content .xp-org a{
+body.experience-page .page__content .exp-org a{
   color: inherit !important;
   text-decoration: none !important;
   border-bottom: 0 !important;
 }
 
-body.experience-page .page__content .xp-org a:hover{
+body.experience-page .page__content .exp-org a:hover{
   opacity: 0.85;
 }
 
-/* FORCE timeline italic */
-body.experience-page .page__content .xp-meta,
-body.experience-page .page__content .xp-meta *{
+/* Timeline italic */
+body.experience-page .page__content .exp-meta,
+body.experience-page .page__content .exp-meta *{
   font-style: italic !important;
   font-size: 15.5px !important;
   opacity: 0.85 !important;
   margin-top: 6px !important;
 }
 
-/* FORCE description justified */
-body.experience-page .page__content p.xp-desc{
+/* Text justified */
+body.experience-page .page__content p.exp-desc{
   margin-top: 14px !important;
   text-align: justify !important;
   text-justify: inter-word !important;
@@ -231,18 +231,17 @@ body.experience-page .page__content p.xp-desc{
   -ms-hyphens: auto !important;
 }
 
-/* Links in paragraph */
-body.experience-page .page__content p.xp-desc a{
+body.experience-page .page__content p.exp-desc a{
   text-decoration: none !important;
   border-bottom: 0 !important;
 }
 
-body.experience-page .page__content p.xp-desc a:hover{
+body.experience-page .page__content p.exp-desc a:hover{
   opacity: 0.9;
 }
 
-/* Logo (not clickable) */
-body.experience-page .page__content .xp-logo{
+/* Logo */
+body.experience-page .page__content .exp-logo{
   position: absolute;
   top: 24px;
   right: 0;
@@ -252,7 +251,7 @@ body.experience-page .page__content .xp-logo{
   pointer-events: none;
 }
 
-body.experience-page .page__content .xp-logo img{
+body.experience-page .page__content .exp-logo img{
   width: 58px;
   height: 58px;
   object-fit: contain;
