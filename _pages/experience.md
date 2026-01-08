@@ -2,7 +2,7 @@
 title: "Experience"
 layout: single
 permalink: /experience/
-classes: experience-page 
+classes: experience-page
 ---
 
 <div class="xp">
@@ -12,11 +12,11 @@ classes: experience-page
       <h2 class="xp-role">AI and Automation Intern</h2>
 
       <div class="xp-org">
-        <strong>
-          <a rel="noopener">Octakaigon Bock Pvt Ltd (BOCK AI)</a>
-          <span class="xp-dot">•</span>
-          Bengaluru, India
-        </strong>
+        <a href="https://www.bockbharath.org/" target="_blank" rel="noopener">
+          <strong>Octakaigon Bock Pvt Ltd (BOCK AI)</strong>
+        </a>
+        <span class="xp-dot">•</span>
+        Bengaluru, India
       </div>
 
       <div class="xp-meta"><em>December 2024 – June 2025</em></div>
@@ -27,20 +27,21 @@ classes: experience-page
     </div>
 
     <a class="xp-logo" href="https://www.bockbharath.org/" target="_blank" rel="noopener" aria-label="BOCK AI website">
-      <img src="/images/experience/bockai.png" alt="BOCK AI logo">
+      <img src="/images/experience/bockai.png" alt="BOCK AI logo" loading="lazy">
     </a>
   </section>
+
 
   <section class="xp-card">
     <div class="xp-body">
       <h2 class="xp-role">Project Intern</h2>
 
       <div class="xp-org">
-        <strong>
-          <a target="_blank" rel="noopener">Center of Excellence in Computational Genomics (RVCE)</a>
-          <span class="xp-dot">•</span>
-          Bengaluru, India
-        </strong>
+        <a href="https://rvce.edu.in/department/biotechnology/centre_of_excellence_in_computational_genomics/" target="_blank" rel="noopener">
+          <strong>Center of Excellence in Computational Genomics (RVCE)</strong>
+        </a>
+        <span class="xp-dot">•</span>
+        Bengaluru, India
       </div>
 
       <div class="xp-meta"><em>November 2022 – December 2022</em></div>
@@ -52,7 +53,7 @@ classes: experience-page
     </div>
 
     <a class="xp-logo" href="https://rvce.edu.in/department/biotechnology/centre_of_excellence_in_computational_genomics/" target="_blank" rel="noopener" aria-label="COECG website">
-      <img src="/images/experience/coecg.png" alt="COECG logo">
+      <img src="/images/experience/coecg.png" alt="COECG logo" loading="lazy">
     </a>
   </section>
 
