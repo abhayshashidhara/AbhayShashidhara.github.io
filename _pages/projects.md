@@ -8,7 +8,7 @@ classes: projects-page
 
 <div class="projects-grid">
   {% for p in site.data.projects %}
-  <div class="project-card">
+  <div class="project-card"> 
 
     <div class="project-body">
       <h2 class="project-title">{{ p.title }}</h2>
