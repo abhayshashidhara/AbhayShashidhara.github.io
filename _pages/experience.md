@@ -10,46 +10,45 @@ classes: experience-page
   <section class="xp-card">
     <div class="xp-body">
       <h2 class="xp-role">AI and Automation Intern</h2>
-      <div class="xp-org">Octakaigon Bock Pvt Ltd (BOCK AI) · Bengaluru, India</div>
+
+      <div class="xp-org">
+        <a href="https://www.bockbharath.org/" target="_blank" rel="noopener">Octakaigon Bock Pvt Ltd (BOCK AI)</a>
+        <span class="xp-dot">•</span>
+        Bengaluru, India
+      </div>
+
       <div class="xp-meta">December 2024 – June 2025</div>
 
-      <p class="xp-summary">
-        During my time at BOCK AI, I worked on building end-to-end data and model workflows for clinical language applications, from medical data structuring to model fine-tuning and deployment.
+      <p class="xp-desc">
+        Worked on practical AI workflows for clinical and medical text applications, supporting data preparation, model experimentation, and deployment-ready pipelines. Contributed to building structured datasets and improving model outputs for real-world use cases.
       </p>
-
-      <ul class="xp-bullets">
-        <li>Collected and processed domain-specific medical content from clinical textbooks and public health sources, converting raw material into structured JSON suitable for model training.</li>
-        <li>Fine-tuned DistilGPT-2 to generate symptom-conditioned diagnostic text aligned with the curated medical dataset.</li>
-        <li>Built and deployed a scalable fine-tuning pipeline on Google Cloud Vertex AI to support iterative updates on evolving medical datasets.</li>
-        <li>Developed an early prototype for text-to-video generation using transformer-based prompt encoding and diffusion-based video synthesis to convert clinical instructions into visual sequences.</li>
-      </ul>
     </div>
 
-    <div class="xp-logo">
+    <a class="xp-logo" href="https://www.bockbharath.org/" target="_blank" rel="noopener" aria-label="BOCK AI website">
       <img src="/images/experience/bockai.png" alt="BOCK AI logo">
-    </div>
+    </a>
   </section>
 
   <section class="xp-card">
     <div class="xp-body">
       <h2 class="xp-role">Project Intern</h2>
-      <div class="xp-org">Center of Excellence for Computational Genomics (RVCE) · Bengaluru, India</div>
+
+      <div class="xp-org">
+        <a href="https://rvce.edu.in/department/biotechnology/centre_of_excellence_in_computational_genomics/" target="_blank" rel="noopener">Center of Excellence in Computational Genomics (RVCE)</a>
+        <span class="xp-dot">•</span>
+        Bengaluru, India
+      </div>
+
       <div class="xp-meta">November 2022 – December 2022</div>
 
-      <p class="xp-summary">
-        At the Center of Excellence for Computational Genomics, I focused on generative modeling for molecular discovery, applying diffusion-based methods and constraint-driven refinement to improve candidate compound quality.
+      <p class="xp-desc">
+        Supported research-focused work in computational genomics and molecular discovery, exploring modern generative modeling ideas and evaluation practices used in early-stage drug design pipelines. Assisted with experiments and validation workflows for candidate quality and feasibility.
       </p>
-
-      <ul class="xp-bullets">
-        <li>Implemented an equivariant diffusion model (DDPM) for de novo molecular generation using noise scheduling and reverse diffusion.</li>
-        <li>Applied conditional and inpainting strategies to enforce molecular constraints and refine ligand–pocket interactions for improved docking behavior.</li>
-        <li>Performed ADMET property screening using SwissADME and ProTox-II to validate drug-likeness and safety profiles of generated compounds.</li>
-      </ul>
     </div>
 
-    <div class="xp-logo">
-      <img src="/images/experience/coecg.png" alt="Computational Genomics logo">
-    </div>
+    <a class="xp-logo" href="https://rvce.edu.in/department/biotechnology/centre_of_excellence_in_computational_genomics/" target="_blank" rel="noopener" aria-label="COECG website">
+      <img src="/images/experience/coecg.png" alt="COECG logo">
+    </a>
   </section>
 
 </div>
