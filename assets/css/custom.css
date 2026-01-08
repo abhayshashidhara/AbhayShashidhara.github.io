@@ -169,62 +169,59 @@ body.about-page .page__content p {
   }
 }
 /* =========================
-   EXPERIENCE PAGE
+   EXPERIENCE PAGE (NO XP WRAPPER)
    ========================= */
 
-.experience-page .xp{
-  max-width: 980px;
-  margin: 0 auto;
-  padding: 8px 0 40px;
+/* Center the page content area */
+body.experience-page .page__content{
+  max-width: 980px !important;
 }
 
-.experience-page .xp-card{
+/* Card */
+body.experience-page .page__content .xp-card{
   position: relative;
   padding: 32px 0;
   border-top: 1px solid rgba(0,0,0,0.12);
 }
 
-.experience-page .xp-card:first-of-type{
+body.experience-page .page__content .xp-card:first-of-type{
   border-top: none;
 }
 
-.experience-page .xp-body{
-  padding-right: 96px;   /* keeps text away from logo */
+/* Keep text away from logo */
+body.experience-page .page__content .xp-body{
+  padding-right: 96px;
   min-width: 0;
 }
 
-/* Bigger company line, no underline */
-.experience-page .xp-org{
+/* Company line */
+body.experience-page .page__content .xp-org{
   font-size: 18px;
   font-weight: 800;
   margin-top: 6px;
 }
 
-.experience-page .xp-org a{
+body.experience-page .page__content .xp-org a{
   color: inherit !important;
   text-decoration: none !important;
   border-bottom: 0 !important;
 }
 
-.experience-page .xp-org a:hover{
+body.experience-page .page__content .xp-org a:hover{
   opacity: 0.85;
 }
 
-/* =========================
-   FORCE TIMELINE ITALIC
-   ========================= */
-.experience-page .xp-meta,
-.experience-page .xp-meta em{
+/* FORCE timeline italic */
+body.experience-page .page__content .xp-meta,
+body.experience-page .page__content .xp-meta *{
   font-style: italic !important;
   font-size: 15.5px !important;
   opacity: 0.85 !important;
   margin-top: 6px !important;
 }
 
-/* =========================
-   FORCE CONTENT JUSTIFIED
-   ========================= */
-.experience-page .xp-desc{
+/* FORCE description justified */
+body.experience-page .page__content p.xp-desc{
   margin-top: 14px !important;
   text-align: justify !important;
   text-justify: inter-word !important;
@@ -234,28 +231,28 @@ body.about-page .page__content p {
   -ms-hyphens: auto !important;
 }
 
-/* Remove underline from links inside paragraph */
-.experience-page .xp-desc a{
+/* Links in paragraph */
+body.experience-page .page__content p.xp-desc a{
   text-decoration: none !important;
   border-bottom: 0 !important;
 }
 
-.experience-page .xp-desc a:hover{
+body.experience-page .page__content p.xp-desc a:hover{
   opacity: 0.9;
 }
 
-/* Logo top-right corner */
-.experience-page .xp-logo{
+/* Logo (not clickable) */
+body.experience-page .page__content .xp-logo{
   position: absolute;
   top: 24px;
   right: 0;
   width: 58px;
   height: 58px;
   display: inline-block;
-  pointer-events: none; /* not clickable */
+  pointer-events: none;
 }
 
-.experience-page .xp-logo img{
+body.experience-page .page__content .xp-logo img{
   width: 58px;
   height: 58px;
   object-fit: contain;
@@ -265,21 +262,3 @@ body.about-page .page__content p {
   background: #fff;
   padding: 6px;
 }
-
-body.experience-page .page__content .xp-meta,
-body.experience-page .page__content .xp-meta *{
-  font-style: italic !important;
-}
-
-/* Force ONLY your experience description to justify */
-body.experience-page .page__content p.xp-desc{
-  text-align: justify !important;
-  text-justify: inter-word !important;
-
-  hyphens: auto !important;
-  -webkit-hyphens: auto !important;
-  -ms-hyphens: auto !important;
-}
-
-
-
