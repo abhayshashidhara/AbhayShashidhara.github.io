@@ -1,41 +1,56 @@
-/* Force sidebar avatar to be a square */
+/* =========================
+   Sidebar avatar (square)
+   ========================= */
 .author__avatar img,
 .sidebar .author__avatar img,
 .author__avatar img.u-photo {
-  border-radius: 0 !important;     /* removes circle */
+  border-radius: 0 !important;
   aspect-ratio: 1 / 1;
-  object-fit: cover;              /* crops nicely */
-  width: 220px;                   /* adjust if needed */
-  height: 220px;                  /* keep same as width */
+  object-fit: cover;
+  width: 220px;
+  height: 220px;
 }
+
+/* =========================
+   Paragraph alignment
+   ========================= */
 .page__content p {
   text-align: justify;
   text-justify: inter-word;
 }
-/* Only affects the Projects page */
-.projects-page .page__content { max-width: 1100px; }
 
-.projects-page .projects-grid{
+/* =========================
+   Projects page ONLY
+   ========================= */
+.projects-page .page__content {
+  max-width: 1100px;
+}
+
+/* Grid layout */
+.projects-page .projects-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 28px;
   margin-top: 18px;
 }
 
-.projects-page .project-card{
+/* Project card */
+.projects-page .project-card {
   background: #0b0b23;
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 18px;
   overflow: hidden;
-  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.25);
 }
 
-.projects-page .project-image-wrap{
+/* Image container */
+.projects-page .project-image-wrap {
   background: #ffffff;
   padding: 14px;
 }
 
-.projects-page .project-image{
+/* Project image */
+.projects-page .project-image {
   width: 100%;
   height: 260px;
   object-fit: cover;
@@ -43,46 +58,53 @@
   display: block;
 }
 
-.projects-page .project-body{ padding: 18px 18px 20px 18px; }
+/* Project body */
+.projects-page .project-body {
+  padding: 18px 18px 20px 18px;
+}
 
-.projects-page .project-title{
+/* Title */
+.projects-page .project-title {
   margin: 0 0 10px 0;
   font-size: 26px;
   font-weight: 800;
   color: #ffffff;
 }
 
-.projects-page .project-desc{
+/* Description */
+.projects-page .project-desc {
   margin: 0 0 14px 0;
-  color: rgba(255,255,255,0.86);
+  color: rgba(255, 255, 255, 0.86);
   line-height: 1.55;
 }
 
-.projects-page .project-stack{
+/* Purple stack pills */
+.projects-page .project-stack {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
   margin: 6px 0 14px 0;
 }
 
-.projects-page .stack-pill{
+.projects-page .stack-pill {
   background: rgba(138, 92, 255, 1);
   color: #0b0b23;
   font-weight: 800;
   border-radius: 10px;
   padding: 8px 12px;
-  line-height: 1;
   font-size: 14px;
-  border: 1px solid rgba(255,255,255,0.12);
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.projects-page .project-actions{
+/* Buttons */
+.projects-page .project-actions {
   display: flex;
   gap: 12px;
   margin-top: 10px;
 }
 
-.projects-page .project-btn{
+.projects-page .project-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -90,26 +112,32 @@
   border-radius: 12px;
   font-weight: 800;
   text-decoration: none !important;
-  border: 1px solid rgba(255,255,255,0.12);
   background: rgba(138, 92, 255, 1);
   color: #0b0b23 !important;
+  border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.projects-page .project-btn:hover{
+.projects-page .project-btn:hover {
   filter: brightness(1.05);
   transform: translateY(-1px);
 }
 
-.projects-page .project-btn-ghost{
+.projects-page .project-btn-ghost {
   background: transparent;
   color: #ffffff !important;
 }
 
-.projects-page .project-btn-ghost:hover{
-  background: rgba(255,255,255,0.08);
+.projects-page .project-btn-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
 }
 
-@media (max-width: 900px){
-  .projects-page .projects-grid{ grid-template-columns: 1fr; }
-  .projects-page .project-image{ height: 240px; }
+/* Mobile */
+@media (max-width: 900px) {
+  .projects-page .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects-page .project-image {
+    height: 240px;
+  }
 }
