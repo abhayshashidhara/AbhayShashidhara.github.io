@@ -5,51 +5,20 @@ permalink: /experience/
 classes: experience-page
 ---
 
-<section class="xp-card">
-  <div class="xp-body">
-    <h2 class="xp-role">AI and Automation Intern</h2>
+### 1) AI and Automation Intern — [Octakaigon Bock Pvt Ltd (BOCK AI)](https://www.bockbharath.org/), Bengaluru, India
 
-    <div class="xp-org">
-      <a href="https://www.bockbharath.org/" target="_blank" rel="noopener">
-        <strong>Octakaigon Bock Pvt Ltd (BOCK AI)</strong>
-      </a>
-      <span class="xp-dot">•</span>
-      Bengaluru, India
-    </div>
+*(December 2024 – June 2025)*
 
-    <div class="xp-meta" style="font-style: italic;">(December 2024 – June 2025)</div>
+During my internship at BOCK AI, I worked on end to end AI workflows for clinical and medical text use cases, from model experimentation to deployment ready pipelines. My core contribution was fine tuning compact transformer models including DistilGPT 2 to generate symptom conditioned diagnostic style text, and supporting iterative improvement through evaluation and refinement cycles. I also contributed to the training workflow on Google Cloud Vertex AI to shorten iteration time and make updates easier as the dataset evolved. In parallel, I collaborated with a team on an early prototype that transformed clinical instructions into short visual sequences using prompt based encoding and diffusion driven generation, to evaluate how multimodal generation could support healthcare focused applications.
 
-    <p class="xp-desc" style="text-align: justify; text-justify: inter-word; hyphens: auto;">
-      During my internship at BOCK AI, I worked on end to end AI workflows for clinical and medical text use cases, from model experimentation to deployment ready pipelines. My core contribution was fine tuning compact transformer models including DistilGPT 2 to generate symptom conditioned diagnostic style text, and supporting iterative improvement through evaluation and refinement cycles. I also contributed to the training workflow on Google Cloud Vertex AI to shorten iteration time and make updates easier as the dataset evolved. In parallel, I collaborated with a team on an early prototype that transformed clinical instructions into short visual sequences using prompt based encoding and diffusion driven generation, to evaluate how multimodal generation could support healthcare focused applications.
-    </p>
-  </div>
+<img src="/images/experience/bockai.png" alt="BOCK AI logo" class="exp-logo" loading="lazy">
 
-  <div class="xp-logo" aria-hidden="true">
-    <img src="/images/experience/bockai.png" alt="BOCK AI logo" loading="lazy">
-  </div>
-</section>
+---
 
-<section class="xp-card">
-  <div class="xp-body">
-    <h2 class="xp-role">Project Intern</h2>
+### 2) Project Intern — [Center of Excellence in Computational Genomics (RVCE)](https://rvce.edu.in/department/biotechnology/centre_of_excellence_in_computational_genomics/), Bengaluru, India
 
-    <div class="xp-org">
-      <a href="https://rvce.edu.in/department/biotechnology/centre_of_excellence_in_computational_genomics/" target="_blank" rel="noopener">
-        <strong>Center of Excellence in Computational Genomics (RVCE)</strong>
-      </a>
-      <span class="xp-dot">•</span>
-      Bengaluru, India
-    </div>
+*(November 2022 – December 2022)*
 
-    <div class="xp-meta" style="font-style: italic;">(November 2022 – December 2022)</div>
+At the Center of Excellence for Computational Genomics, RVCE, I contributed to research prototyping focused on how machine learning can support drug discovery and early stage screening. I explored diffusion based molecular generation and constraint guided refinement to improve candidate feasibility, then used ADMET based property screening to assess drug likeness and early safety signals, with a focus on COVID related targets. I also had the opportunity to present this work at the [AIML BIO International Conference (RVCE, December 2022)](https://www.bangalorenewsnetwork.com/news_detail.php?f_news_id=2377).
 
-    <p class="xp-desc" style="text-align: justify; text-justify: inter-word; hyphens: auto;">
-      At the Center of Excellence for Computational Genomics, RVCE, I contributed to research prototyping focused on how machine learning can support drug discovery and early stage screening. I explored diffusion based molecular generation and constraint guided refinement to improve candidate feasibility, then used ADMET based property screening to assess drug likeness and early safety signals, with a focus on COVID related targets. I also had the opportunity to present this work at the
-      <a href="https://www.bangalorenewsnetwork.com/news_detail.php?f_news_id=2377" target="_blank" rel="noopener">AIML BIO International Conference (RVCE, December 2022)</a>.
-    </p>
-  </div>
-
-  <div class="xp-logo" aria-hidden="true">
-    <img src="/images/experience/coecg.png" alt="COECG logo" loading="lazy">
-  </div>
-</section>
+<img src="/images/experience/coecg.png" alt="COECG logo" class="exp-logo" loading="lazy">
