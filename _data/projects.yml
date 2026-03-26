@@ -6,9 +6,10 @@
     - TF-IDF
     - Pandas
     - NLP
+    - ETL
     - Fine-Tuning
     - BERT
-    -ETL
+
   github_url: "https://github.com/abhayshashidhara/Comparative_emotion_classification_using_ml_models"
   report_url: "/files/Final_Paper_5523 (2).pdf"
 
