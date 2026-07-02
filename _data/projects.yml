@@ -9,7 +9,7 @@
     - 3GPP
 
   github_url: "https://github.com/abhayshashidhara/evidence-aware-3gpp-ran-qa"
-  report_url: "/files/Semantic sages final report(4).pdf"
+  report_url: "https://sites.google.com/umn.edu/nlp-project/home?authuser=0"
 
 - title: "Detecting Co-Travelers with Temporal Detailed People Proximity Graphs"
   description: "Spatial Data Science project for CSCI 8715. Proposed a Temporal Detailed People Proximity Graph (TDPPG) to detect repeated co-travel patterns from noisy Gowalla and Brightkite check-in data using spatiotemporal edge weighting, PyMetis node partitioning, and comparative graph evaluation."
