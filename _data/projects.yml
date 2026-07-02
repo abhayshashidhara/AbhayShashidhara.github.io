@@ -1,6 +1,6 @@
 - title: "Evidence-Aware Hallucination Reduction for 3GPP RAN"
   description: "Built an evidence-aware RAG system for 3GPP TS 38.331 technical question answering. The pipeline combines BM25 retrieval, Qwen2.5 generation, DeBERTa-based NLI verification, and adaptive retrieval to reduce unsupported answers and improve reliability in telecom specification QA."
-  image: "/images/projects/3gpp-rag.jpg"
+  image: "images/projects/3gpp-rag.png"
   stack:
     - BM25
     - Qwen2.5
