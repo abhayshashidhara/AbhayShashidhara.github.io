@@ -5,19 +5,19 @@
   }
 
   /* Projects page: do NOT justify text */
-  .page__content p{
+  .page__content p {
     text-align: left;
     text-justify: auto;
   }
 
-  .projects-grid{
+  .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 28px;
     margin-top: 18px;
   }
 
-  .project-card{
+  .project-card {
     background: #0b0b23;
     border: 1px solid rgba(255,255,255,0.08);
     border-radius: 18px;
@@ -25,12 +25,12 @@
     box-shadow: 0 14px 30px rgba(0,0,0,0.25);
   }
 
-  .project-image-wrap{
+  .project-image-wrap {
     background: #ffffff;
     padding: 14px;
 
-    /* Projects page: smaller images (only inside the image wrap) */
-    img{
+    /* Projects page: smaller images only inside the image wrap */
+    img {
       max-width: 720px;
       height: auto;
       display: block;
@@ -38,31 +38,31 @@
     }
   }
 
-  .project-body{ 
+  .project-body { 
     padding: 18px 18px 20px 18px; 
   }
 
-  .project-title{
+  .project-title {
     margin: 0 0 10px 0;
     font-size: 26px;
     font-weight: 800;
     color: #ffffff;
   }
 
-  .project-desc{
+  .project-desc {
     margin: 0 0 14px 0;
     color: rgba(255,255,255,0.86);
     line-height: 1.55;
   }
 
-  .project-stack{
+  .project-stack {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     margin: 6px 0 14px 0;
   }
 
-  .stack-pill{
+  .stack-pill {
     background: rgba(138, 92, 255, 1);
     color: #0b0b23;
     font-weight: 800;
@@ -73,13 +73,13 @@
     border: 1px solid rgba(255,255,255,0.12);
   }
 
-  .project-actions{
+  .project-actions {
     display: flex;
     gap: 12px;
     margin-top: 10px;
   }
 
-  .project-btn{
+  .project-btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -92,23 +92,54 @@
     color: #0b0b23 !important;
   }
 
-  .project-btn:hover{
+  .project-btn:hover {
     filter: brightness(1.05);
     transform: translateY(-1px);
   }
 
-  .project-btn-ghost{
+  .project-btn-ghost {
     background: transparent;
     color: #ffffff !important;
   }
 
-  .project-btn-ghost:hover{
+  .project-btn-ghost:hover {
     background: rgba(255,255,255,0.08);
   }
 
-  @media (max-width: 900px){
-    .projects-grid{ 
+  @media (max-width: 900px) {
+    .projects-grid { 
       grid-template-columns: 1fr; 
     }
+  }
+}
+
+
+/* Only affects pages that include: classes: experience-page */
+.experience-page {
+  .page__content {
+    max-width: 900px;
+  }
+
+  .page__content p {
+    text-align: left;
+    text-justify: auto;
+  }
+
+  .page__content img.exp-logo {
+    max-width: 220px;
+    max-height: 120px;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    margin: 18px 0 32px 0;
+  }
+
+  .page__content h3 {
+    margin-top: 28px;
+  }
+
+  .page__content hr {
+    margin: 28px 0;
   }
 }
