@@ -16,9 +16,7 @@ I also support inventory analytics by developing machine learning workflows for 
 <img 
   src="/images/experience/radwell.png" 
   alt="Radwell International logo" 
-  loading="lazy"
-  style="width: 220px; max-width: 220px; height: auto; display: block; object-fit: contain; margin: 18px 0 32px 0;"
->
+  class="exp-logo" loading="lazy">
 
 ---
 
