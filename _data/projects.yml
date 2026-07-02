@@ -1,6 +1,6 @@
 - title: "Evidence-Aware Hallucination Reduction for 3GPP RAN"
   description: "Built an evidence-aware RAG system for 3GPP TS 38.331 technical question answering. The pipeline combines BM25 retrieval, Qwen2.5 generation, DeBERTa-based NLI verification, and adaptive retrieval to reduce unsupported answers and improve reliability in telecom specification QA."
-  image: "/images/projects/3gpp-rag.jpg"
+
   stack:
     - BM25
     - Qwen2.5
@@ -13,7 +13,7 @@
 
 - title: "Detecting Co-Travelers with Temporal Detailed People Proximity Graphs"
   description: "Spatial Data Science project for CSCI 8715. Proposed a Temporal Detailed People Proximity Graph (TDPPG) to detect repeated co-travel patterns from noisy Gowalla and Brightkite check-in data using spatiotemporal edge weighting, PyMetis node partitioning, and comparative graph evaluation."
-  image: "images/tdppg-spatial.png"
+ 
   stack:
     - Python
     - Spatial Data Science
@@ -26,7 +26,7 @@
   
 - title: "GoEmotions: Classical vs Pre-Trained ML Models"
   description: "Course project for CSCI 5523 (Introduction to Data Mining). Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
-  image: "/images/projects/goemotions-csci5523.jpg"
+ 
   stack:
     - Hugging Face
     - TF-IDF
@@ -41,7 +41,7 @@
 
 - title: "Soft Foreign Keys: Linking Drug Review Data with Standardized Drug Tables"
   description: "Course project for CSCI 5707 (Principles of Database Systems). Built a soft foreign-key pipeline that maps messy drug names from reviews to standardized generic-drug records using LLMs + vector similarity search, storing links with confidence scores in PostgreSQL."
-  image: "/images/projects/drugsoftkeys.jpg"
+ 
   stack:
     - PostgreSQL
     - Soft-Keys
@@ -53,7 +53,7 @@
 
 - title: "Diagnostic Tool for Parkinson’s Disease: CNN and RAG-Assisted Clinical Summary"
   description: "Built a Parkinson’s screening prototype that combines LLM based symptom intake with a CNN spiral test classifier to generate a structured report. RAG was used to retrieve and cite relevant clinical references during generation, ensuring the narrative is evidence grounded and reducing unsupported statements. "
-  image: "/images/projects/park.jpg"
+
   stack:
     - CNN (ResNet18)
     - Spiral Test
@@ -66,7 +66,7 @@
 
 - title: "Alzheimer’s Disease Database: Integrated Multi Modal Research Platform"
   description: "Developed a centralized Alzheimer’s disease database integrating genomic, proteomic, imaging, and clinical datasets to support cross modality analysis for diagnosis and research."
-  image: "/images/projects/alz.jpeg"
+
   stack:
     - SQLAlchemy
     - Flask
@@ -78,7 +78,7 @@
 
 - title: "CA-Bot: A PDF Grounded Chatbot for CA Study"
   description: "Built a RAG based chatbot that answers Chartered Accountancy questions strictly from prescribed textbooks stored as PDFs. Generated answers grounded in retrieved textbook passages and included citations to improve traceability and reduce unsupported statements."
-  image: "/images/projects/chatbot.jpeg"
+
   stack:
     - RAG
     - PyMuPDF
