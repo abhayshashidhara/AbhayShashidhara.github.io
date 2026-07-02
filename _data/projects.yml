@@ -1,3 +1,17 @@
+- title: "Detecting Co-Travelers with Temporal Detailed People Proximity Graphs"
+  description: "Spatial Data Science project for CSCI 8715. Proposed a Temporal Detailed People Proximity Graph (TDPPG) to detect repeated co-travel patterns from noisy Gowalla and Brightkite check-in data using spatiotemporal edge weighting, PyMetis node partitioning, and comparative graph evaluation."
+  image: "/images/projects/tdppg.jpg"
+  stack:
+    - Python
+    - Spatial Data Science
+    - Graph Analytics
+    - PyMetis
+    - Gowalla
+    - Brightkite
+    - ROC-AUC
+
+  github_url: "https://github.com/abhayshashidhara/TDPPG-Co-Travel-Detection"
+  report_url: "files/Spatial final report.pdf"
 - title: "GoEmotions: Classical vs Pre-Trained ML Models"
   description: "Course project for CSCI 5523 (Introduction to Data Mining). Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
   image: "/images/projects/goemotions-csci5523.jpg"
