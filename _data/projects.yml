@@ -1,32 +1,27 @@
 - title: "Evidence-Aware Hallucination Reduction for 3GPP RAN"
   description: "Built an evidence-aware RAG system for 3GPP TS 38.331 technical question answering. The pipeline combines BM25 retrieval, Qwen2.5 generation, DeBERTa-based NLI verification, and adaptive retrieval to reduce unsupported answers and improve reliability in telecom specification QA."
-
   stack:
     - BM25
     - Qwen2.5
     - DeBERTa
     - NLI
     - 3GPP
-
   github_url: "https://github.com/abhayshashidhara/evidence-aware-3gpp-ran-qa"
   report_url: "https://sites.google.com/umn.edu/nlp-project/home?authuser=0"
 
 - title: "Detecting Co-Travelers with Temporal Detailed People Proximity Graphs"
   description: "Spatial Data Science project for CSCI 8715. Proposed a Temporal Detailed People Proximity Graph (TDPPG) to detect repeated co-travel patterns from noisy Gowalla and Brightkite check-in data using spatiotemporal edge weighting, PyMetis node partitioning, and comparative graph evaluation."
- 
   stack:
     - Python
     - Spatial Data Science
     - Graph Analytics
     - PyMetis
     - ROC-AUC
-
   github_url: "https://github.com/abhayshashidhara/tdppg-cotravel-detection"
-  report_url: "files/Spatial final report.pdf"
-  
+  report_url: "/files/Spatial final report.pdf"
+
 - title: "GoEmotions: Classical vs Pre-Trained ML Models"
   description: "Course project for CSCI 5523 (Introduction to Data Mining). Built an emotion classification pipeline on the GoEmotions Reddit dataset, comparing classical ML approaches with transformer-based models."
- 
   stack:
     - Hugging Face
     - TF-IDF
@@ -35,16 +30,14 @@
     - ETL
     - Fine-Tuning
     - BERT
-
   github_url: "https://github.com/abhayshashidhara/Comparative_emotion_classification_using_ml_models"
   report_url: "/files/Final_Paper_5523 (2).pdf"
 
 - title: "Soft Foreign Keys: Linking Drug Review Data with Standardized Drug Tables"
-  description: "Course project for CSCI 5707 (Principles of Database Systems). Built a soft foreign-key pipeline that maps messy drug names from reviews to standardized generic-drug records using LLMs + vector similarity search, storing links with confidence scores in PostgreSQL."
- 
+  description: "Course project for CSCI 5707 (Principles of Database Systems). Built a soft foreign-key pipeline that maps messy drug names from reviews to standardized generic-drug records using LLMs and vector similarity search, storing links with confidence scores in PostgreSQL."
   stack:
     - PostgreSQL
-    - Soft-Keys
+    - Soft Keys
     - Pinecone
     - LLMs
     - RAG
@@ -52,10 +45,10 @@
   report_url: "/files/DBS Lets Query report (1).pdf"
 
 - title: "Diagnostic Tool for Parkinson’s Disease: CNN and RAG-Assisted Clinical Summary"
-  description: "Built a Parkinson’s screening prototype that combines LLM based symptom intake with a CNN spiral test classifier to generate a structured report. RAG was used to retrieve and cite relevant clinical references during generation, ensuring the narrative is evidence grounded and reducing unsupported statements. "
-
+  description: "Built a Parkinson’s screening prototype that combines LLM-based symptom intake with a CNN spiral test classifier to generate a structured report. RAG was used to retrieve and cite relevant clinical references during generation, ensuring the narrative is evidence-grounded and reducing unsupported statements."
   stack:
-    - CNN (ResNet18)
+    - CNN
+    - ResNet18
     - Spiral Test
     - RAG
     - FAISS
@@ -63,22 +56,19 @@
   github_url: "https://github.com/abhayshashidhara/parkinsonstool"
   report_url: "/files/THEFinallllthesis[1].pdf"
 
-
-- title: "Alzheimer’s Disease Database: Integrated Multi Modal Research Platform"
-  description: "Developed a centralized Alzheimer’s disease database integrating genomic, proteomic, imaging, and clinical datasets to support cross modality analysis for diagnosis and research."
-
+- title: "Alzheimer’s Disease Database: Integrated Multi-Modal Research Platform"
+  description: "Developed a centralized Alzheimer’s disease database integrating genomic, proteomic, imaging, and clinical datasets to support cross-modality analysis for diagnosis and research."
   stack:
     - SQLAlchemy
     - Flask
     - REST API
-    - Java Script
+    - JavaScript
     - CSS
   github_url: "https://github.com/abhayshashidhara/Database_for_Alzheimer-s"
   report_url: "/files/Phase 2 Report(minor).pdf"
 
-- title: "CA-Bot: A PDF Grounded Chatbot for CA Study"
-  description: "Built a RAG based chatbot that answers Chartered Accountancy questions strictly from prescribed textbooks stored as PDFs. Generated answers grounded in retrieved textbook passages and included citations to improve traceability and reduce unsupported statements."
-
+- title: "CA-Bot: A PDF-Grounded Chatbot for CA Study"
+  description: "Built a RAG-based chatbot that answers Chartered Accountancy questions strictly from prescribed textbooks stored as PDFs. Generated answers grounded in retrieved textbook passages and included citations to improve traceability and reduce unsupported statements."
   stack:
     - RAG
     - PyMuPDF
@@ -86,7 +76,4 @@
     - pandas
     - NLP
   github_url: "https://github.com/abhayshashidhara/ca_bot_project_rag"
-  report_url: "/files/cabot.pdf" 
-
-
-
+  report_url: "/files/cabot.pdf"
