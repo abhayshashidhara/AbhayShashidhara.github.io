@@ -13,7 +13,12 @@ At Radwell International, I contribute to data science and automation work acros
 
 I also support inventory analytics by developing machine learning workflows for dead-stock classification across a large industrial parts catalog, using product metadata, stock movement, pricing history, and P21 database features. In parallel, I work on REST API-based ingestion pipelines for Genesys queue and agent metrics, helping automate reporting workflows that were previously handled manually.
 
-<img src="/images/experience/radwell.png" alt="Radwell International logo" class="exp-logo" loading="lazy">
+<img 
+  src="/images/experience/radwell.png" 
+  alt="Radwell International logo" 
+  loading="lazy"
+  style="width: 220px; max-width: 220px; height: auto; display: block; object-fit: contain; margin: 18px 0 32px 0;"
+>
 
 ---
 
